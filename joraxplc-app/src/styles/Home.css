@@ -1,0 +1,17 @@
+.banner-section {
+  background: url("../images/banner-image.svg") top left/cover no-repeat #f8f8f8;
+  padding-bottom: 0 !important;
+}
+.banner-section .flex-container > * {
+  margin-bottom: 0;
+}
+.banner-section .flex-container > *:last-child img {
+  display: block;
+}
+.banner-section .flex-btn > *:last-child {
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.banner-section .flex-btn > *:last-child a {
+  color: #000;
+}

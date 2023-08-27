@@ -1,0 +1,39 @@
+.hr-line {
+  background: #e2dcff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 14px;
+  margin: 0rem 0 1rem 0;
+  /*position:relative;
+    z-index:1034;*/
+  width: 100%;
+}
+.footer-container .list-items span {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  font-weight: 600;
+}
+.footer-container .list-items p {
+  text-transform: lowercase;
+  /* text-align: center; */
+  line-height: 1.2;
+}
+.footer-container .list-items > * {
+  margin-bottom: 2rem;
+}
+
+/* 
+=======================================
+Large Desktop Screen
+=======================================
+*/
+@media (min-width: 980px) {
+  .footer-container .list-items {
+    display: flex;
+    gap: 4%;
+    align-items: flex-start;
+  }
+  .footer-container .list-items > * {
+    flex-basis: 22%;
+  }
+}

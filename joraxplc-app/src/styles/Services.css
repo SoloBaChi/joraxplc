@@ -1,0 +1,43 @@
+.services .flex-container > * {
+  text-align: center;
+  padding: 1rem;
+  box-shadow: var(--box-shadow-3);
+}
+.services .icon-container {
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  margin: 0 auto 1rem;
+}
+.services h5 {
+  text-align: center;
+}
+
+/* ============================
+ What we offer
+ ==============================
+*/
+.what-we-offer {
+  background: url("../images/footer-bg.svg") top left/cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  margin-bottom: 0;
+}
+.what-we-offer > * {
+  margin: auto;
+}
+.what-we-offer .flex-container {
+  justify-content: space-around;
+}
+.what-we-offer .cta-btn {
+  background-color: #10ba21;
+}
+
+@media (min-width: 980px) {
+}
+
+@media (min-width: 1400px) {
+  .services .flex-container > * {
+    flex-basis: 22%;
+  }
+}
