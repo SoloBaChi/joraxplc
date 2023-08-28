@@ -18,9 +18,11 @@
  ==============================
 */
 .what-we-offer {
-  background: url("../images/footer-bg.svg") top left/cover no-repeat;
-  min-height: 70vh;
+  background: url("../images/footer-bg.svg") 50% 100% / cover no-repeat;
+  min-height: 50vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 0;
 }
 .what-we-offer > * {
@@ -28,6 +30,9 @@
 }
 .what-we-offer .flex-container {
   justify-content: space-around;
+}
+.what-we-offer .flex-btn {
+  display: block;
 }
 .what-we-offer .cta-btn {
   background-color: #10ba21;

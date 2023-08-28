@@ -1,0 +1,25 @@
+/* ==================================
+pharmacy Section
+======================================*/
+.pharmacist .flex-container {
+  text-align: center;
+  align-items: flex-end;
+}
+.pharmacist .flex-container > * .img-container {
+  border-radius: 14px;
+  margin-bottom: 1.4rem;
+}
+.pharmacist .flex-container > * .img-container img {
+  border-radius: 14px;
+  height: 100%;
+}
+
+.pharmacist .flex-container > *:first-child .img-container {
+  background: #100745;
+}
+
+@media (min-width: 980px) {
+  .pharmacist .flex-container > * .img-container {
+    height: 65vh;
+  }
+}

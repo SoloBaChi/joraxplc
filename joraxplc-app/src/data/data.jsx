@@ -161,4 +161,21 @@ export const Pharmacist = [
   },
 ];
 
-// module.exports = Services;
+export const SocialMediaIcons = [
+  {
+    id: 1,
+    imgSrc: `/assets/social-media-icon-1.svg`,
+  },
+  {
+    id: 2,
+    imgSrc: `/assets/social-media-icon-2.svg`,
+  },
+  {
+    id: 3,
+    imgSrc: `/assets/social-media-icon-3.svg`,
+  },
+  {
+    id: 4,
+    imgSrc: `/assets/social-media-icon-4.svg`,
+  },
+];
