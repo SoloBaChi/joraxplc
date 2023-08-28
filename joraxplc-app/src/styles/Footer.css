@@ -1,0 +1,164 @@
+.hr-line {
+  background: #e2dcff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 14px;
+  margin: 0 0 0 0;
+  width: 100%;
+}
+.footer-container {
+  background: #1e2ca8;
+  margin-bottom: 0;
+  color: #fff;
+  text-align: center;
+}
+.footer-container .flex-btn {
+  display: block;
+}
+.footer-container .flex-btn .cta-btn {
+  border-radius: 10px;
+  background: #10ba21;
+  padding: 12px 20px;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.footer-container .flex-container > * {
+  margin-bottom: 3rem;
+}
+.footer-container .flex-1 {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-container .flex-1 a {
+  color: #fff;
+  font-weight: 600;
+}
+.footer-container .flex-1 ul ul a {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.footer-container .flex-1 > *:first-child .logo-container {
+  width: 68px;
+  height: 33px;
+}
+.footer-container .flex-1 > *:first-child > * {
+  margin-bottom: 2rem;
+}
+.footer-container .flex-1 > *:first-child input {
+  background-color: #fff;
+  border: none;
+  color: #000;
+}
+.footer-container .flex-1 > *:first-child .logo-container img {
+  height: 100%;
+  display: block;
+}
+.footer-container .flex-1 > *:last-child ul ul {
+  display: block;
+}
+.footer-container .flex-1 > *:last-child .list-items > li {
+  margin-bottom: 1.4rem;
+}
+.footer-container .flex-1 > *:last-child > ul > li:last-child ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.footer-container .flex-1 > *:last-child > ul > li:last-child ul > * {
+  margin-bottom: 0;
+  flex-basis: 22%;
+}
+
+/* ===============================
+Get the flex container after hr
+=================================*/
+.footer-container hr + .flex-container ul a {
+  color: #fff;
+}
+
+.footer-container hr + .flex-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+.footer-container hr + .flex-container > * {
+  margin-bottom: 1rem;
+}
+.footer-container hr + .flex-container > *:first-child {
+  order: 2;
+}
+.footer-container .flex-1 > *:last-child ul > *:last-child ul .img-container {
+  height: 36px;
+  width: 36px;
+}
+
+/* 
+=======================================
+Large Desktop Screen
+=======================================
+*/
+@media (min-width: 980px) {
+  .footer-container .flex-btn {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+  }
+
+  .footer-container .flex-btn > *:first-child {
+    flex-basis: 72%;
+  }
+  .footer-container .flex-btn > * :last-child {
+    flex-basis: 22%;
+  }
+  .footer-container {
+    text-align: initial;
+  }
+  .footer-container .flex-1 > *:last-child {
+    /* border: 1px solid red; */
+    /* flex-basis: 100%; */
+  }
+  .footer-container .flex-1 > *:last-child > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-container .flex-1 > *:last-child > ul > li:last-child ul {
+    justify-content: flex-start;
+  }
+  .footer-container .flex-1 > *:last-child > ul > li:last-child ul > * {
+    margin-bottom: 0;
+  }
+
+  /* 
+  =============================
+  after the hr element
+  =============================
+   */
+  .footer-container hr + .flex-container > *:first-child {
+    flex-basis: 46%;
+  }
+  .footer-container hr + .flex-container > *:last-child {
+    flex-basis: 50%;
+    /* order: 2; */
+  }
+  .footer-container hr + .flex-container ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+  .footer-container hr + .flex-container {
+    margin-top: 1.8rem;
+    /* flex-flow: row wrap; */
+  }
+}
+
+/* ========================
+for large desktop screen
+==========================*/
+@media (min-width: 1200px) {
+  .footer-container .flex-1 > *:last-child {
+    flex-basis: 48%;
+  }
+}

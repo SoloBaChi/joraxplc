@@ -1,0 +1,114 @@
+/* ==========================
+ Header Styles
+==============================*/
+.header {
+  /* border: 1px solid green; */
+  /* padding: 1rem; */
+  margin-bottom: 2rem;
+  box-shadow: var(--header-box-shadow);
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  gap: 4%;
+  /* border: 1px solid red; */
+}
+.header-container > *:first-child {
+  flex-basis: 120px;
+}
+.header .list-menu {
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-flow: row wrap; */
+  padding: 1rem;
+}
+.header .list-menu a {
+  color: #fff;
+}
+
+/* .header .list-menu a:not(.list-menu .active):hover + .active {
+    color: red;
+  } */
+.toggle-btn {
+  font-size: 1.28rem;
+  cursor: pointer;
+  color: #1e2ca8;
+  text-align: right;
+}
+.close-toggle-btn {
+  color: #fff;
+}
+
+/* =====================
+  toggle menu styles
+  ========================*/
+.nav-menu {
+  /* border: 1px solid blue; */
+}
+.open-nav-container {
+  /* border: 2px solid yellow; */
+  display: none;
+}
+.close-nav-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 9%;
+  background: #1e2ca8;
+  color: #fff;
+  /* border: 2px solid yellow; */
+}
+
+/* ================================
+  Media Queries for diff devices
+  ====================================*/
+@media (min-width: 980px) {
+  .header-container {
+    /* align-items: baseline; */
+  }
+  .header-container > * {
+    /* border: 1px solid red; */
+  }
+  .header-container > *:first-child {
+    margin-right: auto;
+    flex-basis: 120px;
+  }
+  /* .header-container > *:last-child {
+    border: 1px solid green;
+  } */
+  .header .list-menu {
+    display: flex;
+    /* align-items: center; */
+    flex-flow: row wrap;
+  }
+  .header .list-menu .active {
+    /* color: #000080; */
+  }
+  .header .list-menu a:not(.list-menu .active):hover {
+    border-bottom: 2px solid #1e2ca8;
+    /* color: #000080; */
+  }
+  .open-nav-container {
+    display: block;
+  }
+  .open-btn-icon {
+    display: none;
+  }
+  .header .list-menu a {
+    color: #000;
+  }
+  .close-nav-container {
+    position: static;
+    top: auto;
+    right: auto;
+    height: auto;
+    width: auto;
+    background: transparent;
+    color: initial;
+    display: none;
+  }
+}
