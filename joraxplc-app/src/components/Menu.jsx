@@ -15,7 +15,7 @@ function Menu({ removeMenu }) {
           </Link>
         </li>
         <li>
-          <Link to="/aboutus" target="_blank" onClick={removeMenu}>
+          <Link to={"aboutus"} target="_blank" onClick={removeMenu}>
             about us
           </Link>
         </li>

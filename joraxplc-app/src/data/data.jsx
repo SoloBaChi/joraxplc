@@ -179,3 +179,9 @@ export const SocialMediaIcons = [
     imgSrc: `/assets/social-media-icon-4.svg`,
   },
 ];
+
+// Export about us image
+export const AboutusImage = {
+  lg: "/assets/aboutus-lg-image.svg",
+  sm: `/assets/aboutus-sm-image.svg`,
+};
