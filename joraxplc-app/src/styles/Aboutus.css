@@ -1,1 +1,33 @@
 /* ABout us styles goes here */
+.aboutus-section .flex-container {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.aboutus-section .flex-container .leaf-img-container {
+  width: 121.382px;
+  height: 163.273px;
+  margin-top: 2.4rem;
+}
+.aboutus-section .flex-container > *:first-child {
+  flex-basis: 28%;
+}
+.aboutus-section .flex-container > *:last-child {
+  position: relative;
+}
+.aboutus-section .flex-container > *:last-child .last-child {
+  position: absolute;
+  top: 75%;
+  left: -35%;
+  border-radius: 20px;
+}
+.aboutus-section .flex-container > *:last-child .last-child img {
+  border-radius: 20px;
+}
+.aboutus-section .flex-container > *:last-child .img-container {
+  border-radius: 20px;
+  max-height: 328px;
+}
+.aboutus-section .flex-container > *:last-child .img-container img {
+  border-radius: 20px;
+}

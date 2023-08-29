@@ -2,11 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import pharmacistImage from "../images/nigeria-pharmacy.svg";
 import greenLeaf from "../images/green-leaf.svg";
-import { Values, Services, Products, Pharmacist, Comments } from "../data/data";
+import {
+  Values,
+  Services,
+  Products,
+  Pharmacist,
+  Comments,
+  AboutusImage,
+} from "../data/data";
 
 const Home = (props) => {
   return (
     <div>
+      <div className="hr-line"></div>
       <section className="banner-section">
         <div className="flex-container">
           <figure className="place-left">
@@ -32,7 +40,7 @@ const Home = (props) => {
           </figure>
         </div>
       </section>
-
+      <div className="hr-line"></div>
       {/* core values  */}
       <section className="services">
         <div className="frame-section">
@@ -56,9 +64,8 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-
       {/* About us */}
-      <section className="aboutus-section">
+      <section className="aboutus-section" id="aboutus">
         <h3>About us</h3>
         <div className="flex-container">
           <figure className="place-left">
@@ -70,11 +77,18 @@ const Home = (props) => {
               to maintain a reasonable market share and thus sustain the
               profitability of the company in the long run.
             </p>
-            <div className="img-container">
+            <div className="leaf-img-container">
               <img src={greenLeaf} alt={greenLeaf} />
             </div>
           </figure>
-          <figure className="place-right"></figure>
+          <figure className="place-right">
+            <div className="img-container first-child">
+              <img src={AboutusImage.lg} alt={AboutusImage.lg} />
+            </div>
+            <div className="img-container last-child">
+              <img src={AboutusImage.sm} alt={AboutusImage.lg} />
+            </div>
+          </figure>
         </div>
       </section>
 
@@ -82,7 +96,7 @@ const Home = (props) => {
       <section className="services">
         <div className="frame-section">
           <div className="frame-header">
-            <h3>we offer accesibilty to healthy care and medications</h3>
+            <h4>we offer accesibilty to healthy care and medications</h4>
           </div>
           <div className="frame-body">
             <div className="flex-container">
@@ -101,7 +115,6 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-
       {/* products */}
       <section className="products">
         <h3>Our products</h3>
@@ -118,7 +131,6 @@ const Home = (props) => {
           ))}
         </div>
       </section>
-
       {/* Testimonials */}
       <section className="testimonials">
         <h3>customer testimonials</h3>
@@ -138,7 +150,6 @@ const Home = (props) => {
           ))}
         </div>
       </section>
-
       <section className="pharmacist">
         <h3>pharmacist</h3>
         <div className="flex-container">
@@ -157,7 +168,6 @@ const Home = (props) => {
           ))}
         </div>
       </section>
-
       {/* what we offer */}
       {/* please check services.css for this section styles */}
       <section className="what-we-offer">

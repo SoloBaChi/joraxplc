@@ -18,12 +18,12 @@ function Main(props) {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<Aboutus />} />
+          {/* <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/services" element={<Services />} />
           <Route path="/pharmacist" element={<Pharmacist />} />
           <Route path="/products" element={<Products />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contactus" element={<Contactus />} />
+          <Route path="/contactus" element={<Contactus />} /> */}
         </Routes>
         <Footer />
       </Router>

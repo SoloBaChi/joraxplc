@@ -9,7 +9,7 @@
   background: #1e2ca8;
   margin-bottom: 0;
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
 }
 .footer-container .flex-btn {
   display: block;
@@ -64,7 +64,7 @@
 .footer-container .flex-1 > *:last-child > ul > li:last-child ul {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .footer-container .flex-1 > *:last-child > ul > li:last-child ul > * {

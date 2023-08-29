@@ -1,6 +1,7 @@
 .banner-section {
   background: url("../images/banner-image.svg") top left/cover no-repeat #f8f8f8;
   padding-bottom: 0 !important;
+  margin-bottom: 0;
 }
 .banner-section .flex-container > * {
   margin-bottom: 0;
