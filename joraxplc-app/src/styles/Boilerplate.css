@@ -88,7 +88,9 @@ ul {
   padding: 0;
   margin: 0;
 }
-
+p {
+  color: #040a16;
+}
 img {
   width: 100%;
   display: block;
@@ -125,6 +127,7 @@ h6 {
   margin-bottom: 1em;
   text-align: initial;
   text-transform: capitalize;
+  color: #040a16;
 }
 h2,
 h3,
@@ -175,7 +178,13 @@ label {
   font-weight: 500;
   text-decoration: underline;
 }
-
+.hr-line {
+  background: #e2dcff;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 10px;
+  margin: 0 0 0 0;
+  width: 100%;
+}
 /* ================================
   Media Queries for diff screen
   ====================================*/

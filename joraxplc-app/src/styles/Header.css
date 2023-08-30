@@ -26,11 +26,10 @@
 }
 
 .toggle-btn {
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: #1e2ca8;
   text-align: right;
-  /* display: inline-block; */
 }
 .close-toggle-btn {
   color: #fff;
@@ -56,6 +55,7 @@
   background: #1e2ca8;
   color: #fff;
   /* border: 2px solid yellow; */
+  z-index: 1020;
 }
 
 /* ================================

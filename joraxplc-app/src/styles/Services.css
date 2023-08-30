@@ -1,6 +1,9 @@
 .services .flex-container > * {
   text-align: center;
   padding: 1rem;
+  -webkit-box-shadow: var(--box-shadow-3);
+  -o-box-shadow: var(--box-shadow-3);
+  -moz-box-shadow: var(--box-shadow-3);
   box-shadow: var(--box-shadow-3);
 }
 .services .icon-container {
@@ -11,6 +14,27 @@
 }
 .services h5 {
   text-align: center;
+}
+
+/* ============================
+ core values
+ ==============================
+*/
+.core-values .frame-section {
+  /* border: 1px solid red; */
+}
+.core-values .frame-header {
+  margin-top: -60px;
+  background-color: var(--white-color);
+  z-index: 1000;
+  position: relative;
+  -webkit-box-shadow: var(--box-shadow-2);
+  -o-box-shadow: var(--box-shadow-2);
+  -moz-box-shadow: var(--box-shadow-2);
+  box-shadow: var(--box-shadow-2);
+}
+.core-values .frame-header h3 {
+  padding: 1rem;
 }
 
 /* ============================
