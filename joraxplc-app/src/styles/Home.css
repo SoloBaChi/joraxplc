@@ -11,7 +11,7 @@
 }
 .banner-section .flex-btn > *:last-child {
   background-color: #fff;
-  border: 1px solid #000;
+  border: 1px solid var(--black-color);
 }
 .banner-section .flex-btn > *:last-child a {
   color: #000;

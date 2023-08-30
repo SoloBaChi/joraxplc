@@ -42,7 +42,7 @@ const Home = (props) => {
       </section>
       <div className="hr-line"></div>
       {/* core values  */}
-      <section className="services">
+      <section className="services core-values">
         <div className="frame-section">
           <div className="frame-header">
             <h3>core values</h3>
@@ -93,7 +93,7 @@ const Home = (props) => {
       </section>
 
       {/* Services */}
-      <section className="services">
+      <section className="services" id="services">
         <div className="frame-section">
           <div className="frame-header">
             <h4>we offer accesibilty to healthy care and medications</h4>
@@ -116,7 +116,7 @@ const Home = (props) => {
         </div>
       </section>
       {/* products */}
-      <section className="products">
+      <section className="products" id="products">
         <h3>Our products</h3>
         <div className="flex-container">
           {Products.map((product) => (
@@ -132,7 +132,7 @@ const Home = (props) => {
         </div>
       </section>
       {/* Testimonials */}
-      <section className="testimonials">
+      <section className="testimonials" id="testimonials">
         <h3>customer testimonials</h3>
         <div className="grid-container">
           {Comments.map((comment) => (
@@ -150,7 +150,7 @@ const Home = (props) => {
           ))}
         </div>
       </section>
-      <section className="pharmacist">
+      <section className="pharmacist" id="pharmacist">
         <h3>pharmacist</h3>
         <div className="flex-container">
           {Pharmacist.map((member) => (
