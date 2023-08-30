@@ -1,9 +1,9 @@
 /* Custom CSS Variables */
 :root {
   --white-bg: #ffffff;
-  --black-bg: #0000000;
+  --black-bg: #040a16;
   --white-color: #ffffff;
-  --black-color: #000000;
+  --black-color: #040a16;
   --heavy-blue: #0a13df;
   --light-blue: #3e45ff;
   --grey: #7c7c7c;
@@ -16,6 +16,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -33,9 +34,10 @@ a {
   display: block;
   padding: 0.7rem;
   text-transform: capitalize;
-  color: #010216;
+  color: var(--black-color);
   font-size: 0.98rem;
   font-weight: 400;
+  cursor: pointer;
 }
 a:hover {
   color: #000066;
@@ -45,6 +47,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: var(--white-bg);
+  color: var(--black-color);
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

@@ -11,7 +11,7 @@ const Footer = (props) => {
       <div className="hr-line"></div>
       <section className="footer-container">
         <div className="flex-container flex-1">
-          <figure className="place-left">
+          <figure className="place-left" id={"contactus"}>
             <div className="logo-container">
               <img src={Logo} alt={Logo} />
             </div>
@@ -77,7 +77,7 @@ const Footer = (props) => {
                     <li key={icon.id}>
                       <Link to="/">
                         <div className="img-container">
-                        <img src={icon.imgSrc} alt={icon.imgSrc} />
+                          <img src={icon.imgSrc} alt={icon.imgSrc} />
                         </div>
                       </Link>
                     </li>

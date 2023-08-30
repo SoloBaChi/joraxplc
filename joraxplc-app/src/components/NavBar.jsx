@@ -7,8 +7,11 @@ const NavBar = (props) => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const toggleNavMenu = () => {
-    setToggleMenu(!toggleMenu);
+    setToggleMenu((prev) => !prev);
   };
+  // const closeToggleMenu = () => {
+  //   setToggleMenu(false);
+  // };
   return (
     <div>
       <div>
@@ -25,7 +28,7 @@ const NavBar = (props) => {
             <RiCloseLine className="close-btn-icon" onClick={toggleNavMenu} />
           </div>
           <div>
-            <Menu removeMenu={toggleNavMenu} />
+            <Menu closeMenu={toggleNavMenu} />
           </div>
         </div>
       )}
