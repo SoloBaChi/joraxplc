@@ -1,7 +1,10 @@
 import React from "react";
+import { register } from "swiper/element/bundle";
 import { Link } from "react-router-dom";
 import pharmacistImage from "../images/nigeria-pharmacy.svg";
 import greenLeaf from "../images/green-leaf.svg";
+import { Carousel } from "react-responsive-carousel";
+import styles from "react-responsive-carousel/lib/styles/carousel.min.css";
 import {
   Values,
   Services,
@@ -11,6 +14,7 @@ import {
   AboutusImage,
 } from "../data/data";
 
+register();
 const Home = (props) => {
   return (
     <div>
@@ -41,7 +45,9 @@ const Home = (props) => {
         </div>
       </section>
       <div className="hr-line"></div>
+
       {/* core values  */}
+      {/* please check services.css for this section styles */}
       <section className="services core-values">
         <div className="frame-section">
           <div className="frame-header">
@@ -64,6 +70,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+
       {/* About us */}
       <section className="aboutus-section" id="aboutus">
         <h3>About us</h3>
@@ -115,6 +122,7 @@ const Home = (props) => {
           </div>
         </div>
       </section>
+
       {/* products */}
       <section className="products" id="products">
         <h3>Our products</h3>
@@ -131,23 +139,33 @@ const Home = (props) => {
           ))}
         </div>
       </section>
+
       {/* Testimonials */}
       <section className="testimonials" id="testimonials">
         <h3>customer testimonials</h3>
         <div className="grid-container">
-          {Comments.map((comment) => (
-            <div key={comment.id}>
-              <figure className="flex-item">
-                <p>{comment.feedback}</p>
-                <div className="img-container">
-                  <img src={comment.imgSrc} alt={comment.imgSrc} />
-                </div>
-                <div>
-                  <h5>{comment.name}</h5>
-                </div>
-              </figure>
-            </div>
-          ))}
+          <Carousel
+            autoPlay={true}
+            infiniteLoop={true}
+            showArrows={false}
+            showStatus={false}
+            stopOnHover={false}
+            swipeable={false}
+          >
+            {Comments.map((comment) => (
+              <div key={comment.id}>
+                <figure className="flex-item">
+                  <p>{comment.feedback}</p>
+                  <div className="img-container">
+                    <img src={comment.imgSrc} alt={comment.imgSrc} />
+                  </div>
+                  <div>
+                    <h5>{comment.name}</h5>
+                  </div>
+                </figure>
+              </div>
+            ))}
+          </Carousel>
         </div>
       </section>
       <section className="pharmacist" id="pharmacist">
@@ -168,6 +186,7 @@ const Home = (props) => {
           ))}
         </div>
       </section>
+
       {/* what we offer */}
       {/* please check services.css for this section styles */}
       <section className="what-we-offer">
