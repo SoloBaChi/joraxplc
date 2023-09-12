@@ -9,7 +9,7 @@ import {
   Values,
   Services,
   Products,
-  Pharmacist,
+  Teams,
   Comments,
   AboutusImage,
 } from "../data/data";
@@ -30,10 +30,10 @@ const Home = (props) => {
             </p>
             <div className="flex-btn">
               <button className="cta-btn">
-                <Link to="/products">order now</Link>
+                <Link to="/">order now</Link>
               </button>
               <button className="cta-btn">
-                <Link to="/products">learn more</Link>
+                <Link to="/">learn more</Link>
               </button>
             </div>
           </figure>
@@ -168,10 +168,12 @@ const Home = (props) => {
           </Carousel>
         </div>
       </section>
+
+      {/* Jorax Team */}
       <section className="pharmacist" id="pharmacist">
-        <h3>pharmacist</h3>
+        <h3>Jorax Team</h3>
         <div className="flex-container">
-          {Pharmacist.map((member) => (
+          {Teams.map((member) => (
             <div key={member.id}>
               <figure className="flex-item">
                 <div className="img-container">
@@ -201,7 +203,7 @@ const Home = (props) => {
             </p>
             <div className="flex-btn">
               <button className="cta-btn">
-                <Link to="/products">order now</Link>
+                <Link to="/">order now</Link>
               </button>
             </div>
           </figure>

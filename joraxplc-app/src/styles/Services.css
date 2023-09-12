@@ -6,6 +6,7 @@
   -moz-box-shadow: var(--box-shadow-3);
   box-shadow: var(--box-shadow-3);
 }
+
 .services .icon-container {
   height: 45px;
   width: 45px;
@@ -63,6 +64,9 @@
 }
 
 @media (min-width: 980px) {
+  .services .flex-container > *:not(.core-values .flex-container > *) {
+    height: 380px;
+  }
 }
 
 @media (min-width: 1400px) {
