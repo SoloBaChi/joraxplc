@@ -3,41 +3,25 @@ export const Values = [
     id: 1,
     icon: `/assets/values-image-1.svg`,
     title: `accountability`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    description: `At Jorax PLC, we believe that accountability is the cornerstone of a successful partnership. Our Accountability Services are designed to ensure that every commitment we make is met with precision and diligence. We hold ourselves to the highest standards, ensuring that our clients can always rely on us to deliver on our promises.`,
   },
   {
     id: 2,
     icon: `/assets/values-image-2.svg`,
     title: `equity`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    description: `Inclusivity and equal opportunity are not just ideals, but essential practices that drive our Equity Services. We are dedicated to creating an environment where every individual, regardless of background or circumstance, has the same opportunity to thrive. Our strategies and solutions are geared towards breaking down barriers and fostering an inclusive culture.`,
   },
   {
     id: 3,
     icon: `/assets/values-image-3.svg`,
     title: `integrity`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    description: `Integrity is not negotiable in the pharmaceutical industry, and at Jorax PLC, it's a principle we hold dear. Our Integrity Services are centered around maintaining the highest ethical standards in everything we do. From our manufacturing processes to our interactions with clients, integrity guides our decisions and actions.`,
   },
   {
     id: 4,
     icon: `/assets/values-image-4.svg`,
     title: `transparency`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    description: `Transparency is the bedrock of trust. Our Transparency Services are geared towards providing our clients with a clear view into our operations. We believe in open communication, sharing information, and ensuring that our clients have complete confidence in the quality and efficacy of our products.`,
   },
 ];
 
@@ -47,46 +31,45 @@ export const Services = [
     id: 1,
     icon: `/assets/services-icon-1.svg`,
     title: `business management & marketing`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    description: `At Jorax PLC, we understand the critical importance of effective business management and marketing strategies in today's competitive landscape. Our experts are dedicated to helping you navigate the complexities of the business world. From strategic planning to targeted marketing campaigns, we offer comprehensive solutions tailored to your unique needs. Let us be your trusted partner in achieving sustainable growth and success.`,
   },
   {
     id: 2,
     icon: `/assets/services-icon-2.svg`,
-    title: `easy logistics`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    title: `clinical presentation`,
+    description: `Precision and clarity are paramount in clinical presentations. At Jorax PLC, we specialize in creating compelling, informative clinical presentations. Our experts combine medical expertise with effective communication skills to ensure your message is conveyed with impact. Trust us to deliver presentations that resonate with your audience and drive meaningful insights.`,
   },
   {
     id: 3,
     icon: `/assets/services-icon-3.svg`,
-    title: `communication & collabration`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    title: `easy logistics`,
+    description: `Simplifying logistics is at the heart of what we do. With Jorax PLC, you can expect seamless and efficient handling of your supply chain needs. Our easy logistics solutions are designed to optimize processes, reduce costs, and ensure timely delivery of your products. Trust us to streamline your operations, allowing you to focus on what matters most - serving your customers.`,
   },
   {
     id: 4,
     icon: `/assets/services-icon-4.svg`,
-    title: `business management & marketing`,
-    description: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Voluptate hic iure temporibus, quisquam ullam iste, aspernatur
-    praesentium laboriosam, optio dignissimos quibusdam culpa.
-    Libero, neque eaque deleniti consequatur dolore earum ea!
-    Corrupti beatae reprehenderit.`,
+    title: `communication & collabration`,
+    description: `Effective communication and collaboration are the cornerstones of a successful enterprise. Jorax PLC provides cutting-edge solutions to enhance connectivity and teamwork within your organization. Our technology-driven platforms and strategies empower your teams to work seamlessly, regardless of location. Experience a new level of productivity and innovation with our communication and collaboration services.`,
   },
 ];
 
 // for the teams
-export const Teams = [{}];
+export const Teams = [
+  {
+    id: 1,
+    imgSrc: `/assets/raymond.png`,
+    name: `Pharm. Raymond Enweogu 
+  Maduabuchi Okokoh`,
+    title: `managing director`,
+  },
+  {
+    id: 2,
+    imgSrc: `/assets/jennifer.png`,
+    name: `Pharm. Okolo Jennifer 
+    Chidimma`,
+    title: `director of finance`,
+  },
+];
 
 // for the products
 export const Products = [
@@ -144,22 +127,7 @@ export const Comments = [
   },
 ];
 
-export const Pharmacist = [
-  {
-    id: 1,
-    imgSrc: `/assets/pharmacist-image-1.svg`,
-    name: `Raymond Enweogu 
-  Mmaduabuchi Okokoh`,
-    title: `managing director`,
-  },
-  {
-    id: 2,
-    imgSrc: `/assets/pharmacist-image-2.svg`,
-    name: `Pharm. Okolo Jennifer 
-    Chidinma`,
-    title: `director of finance`,
-  },
-];
+export const Pharmacist = [];
 
 export const SocialMediaIcons = [
   {
