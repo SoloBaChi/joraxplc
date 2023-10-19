@@ -1,4 +1,4 @@
-.services .flex-container > * {
+.services .grid-2 > * {
   text-align: center;
   padding: 1rem;
   -webkit-box-shadow: var(--box-shadow-3);
@@ -65,12 +65,12 @@
 
 @media (min-width: 980px) {
   .services .flex-container > *:not(.core-values .flex-container > *) {
-    height: 380px;
+    /* height: 380px; */
   }
 }
 
-@media (min-width: 1400px) {
-  .services .flex-container > * {
-    flex-basis: 22%;
+@media (min-width: 1200px) {
+  .services .grid-2 {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

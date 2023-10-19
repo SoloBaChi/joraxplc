@@ -54,7 +54,7 @@ const Home = (props) => {
             <h3>core values</h3>
           </div>
           <div className="frame-body">
-            <div className="flex-container">
+            <div className="grid-2">
               {Values.map((value) => (
                 <div key={value.id}>
                   <figure className="flex-item">
@@ -73,7 +73,7 @@ const Home = (props) => {
 
       {/* About us */}
       <section className="aboutus-section" id="aboutus">
-        <h3>About us</h3>
+        <h5>About us</h5>
         <div className="flex-container">
           <figure className="place-left">
             <h4>pharmaceutical product available at your reach</h4>
@@ -106,7 +106,7 @@ const Home = (props) => {
             <h4>we offer accesibilty to healthy care and medications</h4>
           </div>
           <div className="frame-body">
-            <div className="flex-container">
+            <div className="grid-2">
               {Services.map((service) => (
                 <div key={service.id}>
                   <figure className="flex-item">

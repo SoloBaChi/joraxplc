@@ -75,7 +75,7 @@ button {
   padding: 0.5rem;
   min-height: 250px;
 }
-
+.grid-2 > *,
 .flex-container > * {
   margin-bottom: 6rem;
 }
@@ -134,12 +134,12 @@ h3,
 h4,
 h5,
 h6 {
-  text-align: center;
+  /* text-align: center; */
 }
 header,
 section {
   padding: 0.5rem 5% !important;
-  margin-bottom: 6em;
+  margin-bottom: 2em;
 }
 
 /* ================================
@@ -189,6 +189,11 @@ label {
   Media Queries for diff screen
   ====================================*/
 @media (min-width: 980px) {
+  h2,
+  h3,
+  h5 {
+    text-align: center;
+  }
   section {
     padding: 1rem 9% !important;
   }
@@ -205,9 +210,14 @@ label {
   }
   .flex-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
     gap: 4%;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
   }
   .flex-btn {
     display: flex;
@@ -218,5 +228,6 @@ label {
 
   .flex-container > * {
     flex-basis: 48%;
+    margin-bottom: 0;
   }
 }

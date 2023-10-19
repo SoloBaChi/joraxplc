@@ -1,4 +1,8 @@
 /* ABout us styles goes here */
+.aboutus-section h5 {
+  color: #10ba21;
+  text-align: left;
+}
 .aboutus-section .flex-container {
   align-items: flex-start;
   justify-content: space-between;

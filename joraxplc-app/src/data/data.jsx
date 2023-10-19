@@ -57,7 +57,7 @@ export const Services = [
 export const Teams = [
   {
     id: 1,
-    imgSrc: `/assets/raymond.png`,
+    imgSrc: `/assets/director-one.svg`,
     name: `Pharm. Raymond Enweogu 
   Maduabuchi Okokoh`,
     title: `managing director`,
@@ -109,19 +109,19 @@ export const Products = [
 export const Comments = [
   {
     id: 1,
-    feedback: `“Porax Healthcare Company is the best online sore to get original drugs and they deliver in time.”`,
+    feedback: `“Jorax Healthcare Company is the best online sore to get original drugs and they deliver in time.”`,
     imgSrc: `/assets/testimonial-image-1.svg`,
     name: `jane brown`,
   },
   {
     id: 2,
-    feedback: `“If you are looking for a pharmaceutical company to partner with that will assist you in marketing your products Porax Healthcare is the answer.”`,
+    feedback: `“If you are looking for a pharmaceutical company to partner with that will assist you in marketing your products Jorax Healthcare is the answer.”`,
     imgSrc: `/assets/testimonial-image-2.svg`,
     name: `chidimma edward`,
   },
   {
     id: 3,
-    feedback: `“I am happy that I have no worries of getting medications at the sip of the finger as Porax Healthcare have made life very easy for individuals.”`,
+    feedback: `“I am happy that I have no worries of getting medications at the sip of the finger as Jorax Healthcare have made life very easy for individuals.”`,
     imgSrc: `/assets/testimonial-image-3.svg`,
     name: `ambrose`,
   },
