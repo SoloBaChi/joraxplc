@@ -4,7 +4,7 @@ import { AboutusImage } from "../data/data";
 function Aboutus(props) {
   return (
     <>
-      <h3>About us</h3>
+      <h5>About us</h5>
       <div className="flex-container">
         <figure className="place-left">
           <h4>pharmaceutical product available at your reach</h4>
