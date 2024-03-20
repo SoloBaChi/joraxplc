@@ -1,5 +1,4 @@
 import React from "react";
-import { register } from "swiper/element/bundle";
 import { Link } from "react-router-dom";
 import pharmacistImage from "../images/nigeria-pharmacy.svg";
 import greenLeaf from "../images/green-leaf.svg";
@@ -14,7 +13,7 @@ import {
   AboutusImage,
 } from "../data/data";
 
-register();
+
 const Home = (props) => {
   return (
     <div>
