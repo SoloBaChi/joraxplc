@@ -4,7 +4,8 @@
   --black-bg: #040a16;
   --white-color: #ffffff;
   --black-color: #040a16;
-  --heavy-blue: #0a13df;
+  --green-bg: #00AC57;
+  --green-color: #00AC57;
   --light-blue: #3e45ff;
   --grey: #7c7c7c;
   --gray: #9c9c9c;
@@ -29,18 +30,18 @@ html {
   background-color: #3e45ff;
   color: #fff;
 }
+::placeholder{
+font-size:1rem;
+}
 a {
   text-decoration: none;
   display: block;
   padding: 0.7rem;
   text-transform: capitalize;
   color: var(--black-color);
-  font-size: 0.98rem;
+  font-size: 0.878rem;
   font-weight: 400;
   cursor: pointer;
-}
-a:hover {
-  color: #000066;
 }
 body {
   padding: 0;
@@ -53,27 +54,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+input,
 button {
   box-shadow: none;
   border: none;
   outline: none;
 }
-.cta-btn {
+.blank-cta-btn,
+.cta-btn-primary,
+.cta-btn-secondary,
+button {
+  padding: 0.8rem 1.2rem;
   display: inline-block;
-  background-color: #1e2ca8;
+  background: #1e2ca8;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+  /* border-radius: 30px; */
   border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  text-align:center;
+  margin-top:2rem;
+}
+.blank-cta-btn{
+background: #FFFFFF;
+border: 1px solid #00AC57;
+color:#00AC57;
+}
+.cta-btn-primary{
+background: #00AC57;
+}
+
+.cta-btn-container{
+text-align:center;
 }
 .cta-btn a {
   color: #fff;
 }
 .card-container > * {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem ;
 }
 
 .card {
   box-shadow: var(--box-shadow-1);
-  padding: 0.5rem;
-  min-height: 250px;
 }
 .grid-2 > *,
 .flex-container > * {
@@ -89,95 +113,73 @@ ul {
   margin: 0;
 }
 p {
-  color: #040a16;
+  color: #1E1E1E;
+  font-size:0.878rem;
 }
 img {
   width: 100%;
-  /* display: block; */
+  display: block;
+  border-radius:inherit;
 }
 
+
 /* define default font */
-h1 {
-  font-size: 2.6rem;
-  font-weight: 700;
-  text-transform: capitalize;
-}
-h2 {
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-h3 {
-  font-size: 2rem;
-  font-weight: 600;
-}
-h4 {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-h5 {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1em;
-  text-align: initial;
+  margin-bottom: 1rem;
   text-transform: capitalize;
-  color: #040a16;
+  color: #1E1E1E;
+  font-weight:800;
 }
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* text-align: center; */
+h1 {
+  font-size: 1.9rem;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight:700;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.878rem;
 }
 header,
 section {
-  padding: 0.5rem 5% !important;
-  margin-bottom: 2em;
+  padding: 0.5rem 5%;
+  margin-bottom: 3.5rem;
 }
 
 /* ================================
    General form input styles
   ====================================*/
-.form-container {
-  text-align: center;
-}
-.form-container .place-right > * {
-  margin-bottom: 4rem;
-}
-.form-container .form-header {
-  padding: 1rem;
-}
-
-input {
-  width: 100%;
-  outline: none;
-  padding: 0.7rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  color: #fff;
-}
-label {
-  display: block;
-  text-transform: capitalize;
-  text-align: left;
-}
-.form-field {
-  width: 80%;
-  margin: 0 auto 1.4rem auto;
-}
-.login_signup a {
-  font-size: 0.882rem;
-  color: #000066;
-  font-weight: 500;
-  text-decoration: underline;
-}
+  form .form-field {
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 1.4rem;
+  }
+  form .form-field label {
+    text-transform: capitalize;
+    margin-bottom: 0.45rem;
+    font-weight: 400;
+    display: block;
+  }
+  form .form-field input,
+  form .form-field textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
 .hr-line {
   background: #e2dcff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -185,49 +187,77 @@ label {
   margin: 0 0 0 0;
   width: 100%;
 }
+
+ /* FOR FLEXED ITEMS */
+ .flex-container-2 > *,
+ .flex-container-4 > *,
+ .grid-container-3 > * {
+   margin-bottom: 4.5rem;
+ }
+
+
+
+
 /* ================================
   Media Queries for diff screen
   ====================================*/
 @media (min-width: 980px) {
-  h2,
-  h3,
+  h1{
+  font-size:3.12rem;
+  }
+  h2 {
+    font-size:2.412rem;
+  }
+  h3 {
+    font-size:2.212rem;
+  }
+  h4 {
+    font-size: 1.812rem;
+  }
   h5 {
-    text-align: center;
+    font-size:1rem;
   }
   section {
-    padding: 1rem 9% !important;
+    padding: 1rem 8%;
+  }
+  p {
+    font-size:1rem;
   }
   .form-field {
     width: 50%;
   }
-  .card-container {
+  .flex-container-2 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4%;
+    align-items:center;
+  }
+  .flex-container-4 {
     display: flex;
     flex-flow: row wrap;
     gap: 4%;
   }
-  .card-container > * {
-    flex-basis: 22%;
-  }
-  .flex-container {
-    display: flex;
-    align-items: flex-start;
-    flex-flow: row wrap;
-    gap: 4%;
-  }
-  .grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-  .flex-btn {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    gap: 4%;
-  }
-
-  .flex-container > * {
+  .flex-container-4 > *,
+  .flex-container-2 > * {
     flex-basis: 48%;
+  }
+  .grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items:center;
+    gap:1.2rem;
+  }
+  .flex-container-2>*,
+  .grid-container-3 > * {
+    margin-bottom: 0;
+  }
+}
+
+
+/* LARGE DESKTOP */
+@media (min-width: 1200px) {
+  .flex-container-4 > * {
+    flex-basis: 22%;
     margin-bottom: 0;
   }
 }

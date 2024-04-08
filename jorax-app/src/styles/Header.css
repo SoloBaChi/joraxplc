@@ -58,6 +58,20 @@
   z-index: 1020;
 }
 
+
+
+/* ===================Cart Section============== */
+.cart-section h4{
+font-size:1.6rem;
+font-weight:500;
+color:var(--green-color)
+}
+
+
+
+
+
+
 /* ================================
   Media Queries for diff devices
   ====================================*/
@@ -84,7 +98,7 @@
     /* color: #000080; */
   }
   .header .list-menu a:not(.list-menu .active):hover {
-    border-bottom: 2px solid #1e2ca8;
+    border-bottom: 2px solid var(--green-color);
     /* color: #000080; */
   }
   .open-nav-container {
