@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Services(props) {
     return (
-        <section className='services-section'>
+        <section className='services-section' id={"services"}>
             <h2>how we can serve you</h2>
             <div className="flex-container-2">
                 <div className="flex-item">

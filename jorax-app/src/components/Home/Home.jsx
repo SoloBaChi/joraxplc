@@ -8,7 +8,7 @@ import Services from "./Services";
 import WhyUs from "./WhyUs";
 import PartnerWithUs from "./PartnerWithUs";
 import Testimonial from "./Testimonial";
-
+import Footer from "../Footer"
 
 const Home = (props) => {
   return (
@@ -19,6 +19,7 @@ const Home = (props) => {
     <WhyUs/>
     <PartnerWithUs/>
     <Testimonial/>
+    <Footer/>
     </>
   );
 };

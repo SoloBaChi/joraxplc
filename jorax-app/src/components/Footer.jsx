@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "../images/footer-logo.svg";
-import { SocialMediaIcons } from "../data/data";
+
 
 const Footer = (props) => {
   const year = new Date().getFullYear();
@@ -10,31 +9,37 @@ const Footer = (props) => {
     <div>
       {/* <div className="hr-line"></div> */}
       <section className="footer-container">
-        <div className="flex-container flex-1">
-          <figure className="place-left" id={"contactus"}>
+        <div className="flex-container-2 flex-1">
+          <div className="place-left" id={"contactus"}>
             <div className="logo-container">
-              <img src={Logo} alt={Logo} />
+              <img src={`/assets/images/footer-logo.svg`} alt="footer" />
             </div>
+            <p>
+            Jorax Healthcare Ltd Office address: 149 Hilltop Road, Abakaliki, Ebonyi, Flat 3, 1st Floor
+            </p>
             <p>
               Join our newsletter to stay up to date on our products and
               services.
             </p>
-            <form>
-              <div className="flex-btn">
-                <input type="email" placeholder="Enter your email" required />
-                <button type="submit" className="cta-btn">
-                  subscribe
-                </button>
-              </div>
-            </form>
+
             <div className="subscribe">
               <p>
                 By subscribing you agree to our Policy and provide consent to
                 recieve updates from our company.
               </p>
             </div>
-          </figure>
-          <figure className="place-right">
+            <form>
+              <div className="form-field">
+                <input type="email" placeholder="Enter your email" required />
+                <div className="cta-btn-container">
+                <button className="cta-btn-primary" type="submit">
+                  subscribe
+                </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div className="place-right">
             <ul className="list-items">
               <li>
                 <Link to="/">menu</Link>
@@ -51,6 +56,12 @@ const Footer = (props) => {
                   <li>
                     <Link to="/">support</Link>
                   </li>
+                  <li>
+                    <Link to="/">privacy</Link>
+                  </li>
+                  <li>
+                    <Link to="/">cookies</Link>
+                  </li>
                 </ul>
               </li>
               <li>
@@ -63,46 +74,64 @@ const Footer = (props) => {
                     <Link to="/">pricing</Link>
                   </li>
                   <li>
+                    <Link to="/">CSR</Link>
+                  </li>
+                  <li>
                     <Link to="/">help center</Link>
                   </li>
                   <li>
                     <Link to="/">documentation</Link>
                   </li>
-                </ul>
-              </li>
-              <li>
-                <Link to="/">follow on us</Link>
-                <ul className="flex-container">
-                  {SocialMediaIcons.map((icon) => (
-                    <li key={icon.id}>
-                      <Link to="/">
-                        <div className="img-container">
-                          <img src={icon.imgSrc} alt={icon.imgSrc} />
-                        </div>
-                      </Link>
-                    </li>
-                  ))}
+                  <li>
+                    <Link to="/">team of service</Link>
+                  </li>
                 </ul>
               </li>
             </ul>
-          </figure>
+          </div>
         </div>
 
         {/* draw a horizontal line */}
         <hr></hr>
-        <div className="flex-container flex-2">
+        <div className="flex-container-2 flex-2">
+        <div className="flex-item">
+            <h5>join us on</h5>
+            <div className="social-media-links">
+            <div className="inner-flex-2">
+              <Link to="https://www.instagram.com/joraxhealthcareltd?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="
+               className="img-container"
+               target="_blank"
+               >
+                <img src={`/assets/social-media/instagram.svg`} alt="instagram" />
+              </Link>
+              <Link to="https://www.instagram.com/joraxhealthcareltd?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="
+               className="img-container"
+               target="_blank"
+               >
+                <img src={`/assets/social-media/youtube.svg`} alt="youtube" />
+              </Link>
+              <Link to="https://www.facebook.com/profile.php/?id=100068664810886&name=xhp_nt__fb__action__open_user"
+               className="img-container"
+               target="_blank"
+               >
+                <img src={`/assets/social-media/facebook.svg`} alt="facebook" />
+              </Link>
+              <Link to=" https://www.linkedin.com/posts/joraxhealthcare_how-do-you-feel-about-jorax-today-activity-7168630335381962755-fF7O?utm_source=share&utm_medium=member_android"
+               className="img-container"
+               target="_blank"
+               >
+                <img src={`/assets/social-media/linkedin.svg`} alt="linkedin" />
+              </Link>
+              <Link to="https://x.com/JoraxLtd?t=anIrKE0A2pUmiPaPM1IawA&s=08"
+               className="img-container"
+               target="_blank"
+               >
+                <img src={`/assets/social-media/twitter.svg`} alt="twitter" />
+              </Link>
+            </div>
+            </div>
+          </div>
           <p>{year} Jorax Healthcare! All right reserved.</p>
-          <ul>
-            <li>
-              <Link to="/">privacy policy</Link>
-            </li>
-            <li>
-              <Link to="/">terms of service</Link>
-            </li>
-            <li>
-              <Link to="/">cookies setting</Link>
-            </li>
-          </ul>
         </div>
       </section>
     </div>
