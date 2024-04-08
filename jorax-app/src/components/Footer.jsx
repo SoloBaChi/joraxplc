@@ -8,7 +8,7 @@ const Footer = (props) => {
 
   return (
     <div>
-      <div className="hr-line"></div>
+      {/* <div className="hr-line"></div> */}
       <section className="footer-container">
         <div className="flex-container flex-1">
           <figure className="place-left" id={"contactus"}>
