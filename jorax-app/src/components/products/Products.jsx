@@ -1,10 +1,11 @@
 
 import React from 'react';
-import Footer from "../Footer"
-import RatedIcon from '../shared/icons/RatedIcon';
-import UnratedIcon from '../shared/icons/UnratedIcon';
-
-function Products(props) {
+import Footer from "../footer/Footer"
+// import RatedIcon from '../shared/icons/RatedIcon';
+// import UnratedIcon from '../shared/icons/UnratedIcon';
+// import { useNavigate } from 'react-router-dom';
+import ProductCard from './ProductCard';
+function Products({addToCart, ProductItems}) {
     return (
         <>
         <section className='product-section'>
@@ -24,184 +25,13 @@ function Products(props) {
             <div className="jorax-foods-products">
                 <h3>jorax food products</h3>
                 <div className="grid-container-3">
-                    <figure className="card product-card">
-                        <div className="top-section">
-                            <div className="img-container">
-                                <img src={`assets/products/p-1.svg`} alt="palm oil product" />
-                            </div>
-                        </div>
-                        <div className="bottom-section">
-                          <h5>jorax premium oil</h5>
-                          <p>Jorax Palm Oil the best processed and packaged oil sold across the globe.</p>
-                          <div className="rates">
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <UnratedIcon/>
-                            <span>(30)</span>
-                          </div>
-                          <div className="flex-container-2 price">
-                            <div className="flex-item">
-                                <p>$5.00</p>
-                            </div>
-                            <div className="flex-item">
-                             <div className="cta-btn-container">
-                                <button className='cta-btn-primary'>add to cart</button>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                    </figure>
-                    
-                    {/* p-2 */}
-                    <figure className="card product-card">
-                        <div className="top-section">
-                            <div className="img-container">
-                                <img src={`assets/products/p-2.svg`} alt="palm oil product" />
-                            </div>
-                        </div>
-                        <div className="bottom-section">
-                          <h5>jorax premium oil</h5>
-                          <p>Jorax Palm Oil the best processed and packaged oil sold across the globe.</p>
-                          <div className="rates">
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <UnratedIcon/>
-                            <span>(30)</span>
-                          </div>
-                          <div className="flex-container-2 price">
-                            <div className="flex-item">
-                                <p>$5.00</p>
-                            </div>
-                            <div className="flex-item">
-                             <div className="cta-btn-container">
-                                <button className='cta-btn-primary'>add to cart</button>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                    </figure>
-
-                    {/* p-3 */}
-                    <figure className="card product-card">
-                        <div className="top-section">
-                            <div className="img-container">
-                                <img src={`assets/products/p-3.svg`} alt="palm oil product" />
-                            </div>
-                        </div>
-                        <div className="bottom-section">
-                          <h5>jorax premium oil</h5>
-                          <p>Jorax Palm Oil the best processed and packaged oil sold across the globe.</p>
-                          <div className="rates">
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <UnratedIcon/>
-                            <span>(30)</span>
-                          </div>
-                          <div className="flex-container-2 price">
-                            <div className="flex-item">
-                                <p>$5.00</p>
-                            </div>
-                            <div className="flex-item">
-                             <div className="cta-btn-container">
-                                <button className='cta-btn-primary'>add to cart</button>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                    </figure>
-
-                    {/* p-4 */}
-                    <figure className="card product-card">
-                        <div className="top-section">
-                            <div className="img-container">
-                                <img src={`assets/products/p-4.svg`} alt="palm oil product" />
-                            </div>
-                        </div>
-                        <div className="bottom-section">
-                          <h5>jorax premium oil</h5>
-                          <p>Jorax Palm Oil the best processed and packaged oil sold across the globe.</p>
-                          <div className="rates">
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <UnratedIcon/>
-                            <span>(30)</span>
-                          </div>
-                          <div className="flex-container-2 price">
-                            <div className="flex-item">
-                                <p>$5.00</p>
-                            </div>
-                            <div className="flex-item">
-                             <div className="cta-btn-container">
-                                <button className='cta-btn-primary'>add to cart</button>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                    </figure>
-
-                    {/* p-5 */}
-                    <figure className="card product-card">
-                        <div className="top-section">
-                            <div className="img-container">
-                                <img src={`assets/products/p-5.svg`} alt="palm oil product" />
-                            </div>
-                        </div>
-                        <div className="bottom-section">
-                          <h5>jorax premium oil</h5>
-                          <p>Jorax Palm Oil the best processed and packaged oil sold across the globe.</p>
-                          <div className="rates">
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <UnratedIcon/>
-                            <span>(30)</span>
-                          </div>
-                          <div className="flex-container-2 price">
-                            <div className="flex-item">
-                                <p>$5.00</p>
-                            </div>
-                            <div className="flex-item">
-                             <div className="cta-btn-container">
-                                <button className='cta-btn-primary'>add to cart</button>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                    </figure>
-
-                    {/* p-6 */}
-                    <figure className="card product-card">
-                        <div className="top-section">
-                            <div className="img-container">
-                                <img src={`assets/products/p-6.svg`} alt="palm oil product" />
-                            </div>
-                        </div>
-                        <div className="bottom-section">
-                          <h5>jorax premium oil</h5>
-                          <p>Jorax Palm Oil the best processed and packaged oil sold across the globe.</p>
-                          <div className="rates">
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <RatedIcon/>
-                            <UnratedIcon/>
-                            <span>(30)</span>
-                          </div>
-                          <div className="flex-container-2 price">
-                            <div className="flex-item">
-                                <p>$5.00</p>
-                            </div>
-                            <div className="flex-item">
-                             <div className="cta-btn-container">
-                                <button className='cta-btn-primary'>add to cart</button>
-                             </div>
-                            </div>
-                          </div>
-                        </div>
-                    </figure>
+                  {
+                  ProductItems.map((item,index)=> (
+                  <div key={item.id}>
+                    <ProductCard {...item} addToCart={addToCart} item={item}/>
+                  </div>
+                  ))
+                  }
                 </div>
             </div>
         </section>

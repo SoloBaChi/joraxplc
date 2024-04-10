@@ -8,7 +8,7 @@ import Services from "./Services";
 import WhyUs from "./WhyUs";
 import PartnerWithUs from "./PartnerWithUs";
 import Testimonial from "./Testimonial";
-import Footer from "../Footer"
+import Footer from "../footer/Footer"
 
 const Home = (props) => {
   return (
