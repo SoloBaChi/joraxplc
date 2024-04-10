@@ -39,14 +39,14 @@
   toggle menu styles
   ========================*/
 .nav-menu {
-  /* border: 1px solid blue; */
+  /* border: 1px solid red; */
 }
 .open-nav-container {
   /* border: 2px solid yellow; */
   display: none;
 }
 .close-nav-container {
-  position: absolute;
+  position:fixed;
   top: 0;
   right: 0;
   height: 100%;
@@ -61,11 +61,11 @@
 
 
 /* ===================Cart Section============== */
-.cart-section h4{
-font-size:1.6rem;
-font-weight:500;
-color:var(--green-color)
+
+.add-to-cart{
+/* border:1px solid red; */
 }
+
 
 
 

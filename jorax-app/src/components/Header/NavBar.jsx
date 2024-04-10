@@ -23,12 +23,12 @@ const NavBar = (props) => {
         </div>
       </div>
       {toggleMenu && (
-        <div className="close-nav-container">
+        <div className="close-nav-container" onClick={toggleNavMenu}>
           <div className="close-toggle-btn toggle-btn">
-            <RiCloseLine className="close-btn-icon" onClick={toggleNavMenu} />
+            <RiCloseLine className="close-btn-icon"/>
           </div>
           <div>
-            <Menu closeMenu={toggleNavMenu} />
+            <Menu toggleMenu ={toggleNavMenu}/>
           </div>
         </div>
       )}

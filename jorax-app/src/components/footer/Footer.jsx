@@ -104,7 +104,7 @@ const Footer = (props) => {
                >
                 <img src={`/assets/social-media/instagram.svg`} alt="instagram" />
               </Link>
-              <Link to="https://www.instagram.com/joraxhealthcareltd?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="
+              <Link to="/"
                className="img-container"
                target="_blank"
                >
@@ -116,7 +116,7 @@ const Footer = (props) => {
                >
                 <img src={`/assets/social-media/facebook.svg`} alt="facebook" />
               </Link>
-              <Link to=" https://www.linkedin.com/posts/joraxhealthcare_how-do-you-feel-about-jorax-today-activity-7168630335381962755-fF7O?utm_source=share&utm_medium=member_android"
+              <Link to="https://www.linkedin.com/posts/joraxhealthcare_how-do-you-feel-about-jorax-today-activity-7168630335381962755-fF7O/?utm_source=share&utm_medium=member_android"
                className="img-container"
                target="_blank"
                >

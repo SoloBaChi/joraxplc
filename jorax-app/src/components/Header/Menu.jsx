@@ -1,39 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ScrollLink from "./ScrollLink";
-import Cart from "./shared/icons/Cart";
+import ScrollLink from "../common/ScrollLink";
+import CartIcon from "../shared/icons/CartIcon";
 
-function Menu({ closeMenu }) {
+function Menu({toggleMenu}) {
   return (
     <nav className="nav-menu">
       <ul className="list-menu">
         <li>
-          <Link to="/" className="active" onClick={closeMenu}>
+          <Link to="/" className="active">
             {/* <FaHome /> */}
             home
           </Link>
         </li>
-        <ScrollLink to={"aboutus"}>
-          <li onClick={closeMenu}>about us</li>
-        </ScrollLink>
+        <li>
+        <Link to="/aboutus"> about us</Link>
+        </li>
         <ScrollLink to={"services"}>
-          <li onClick={closeMenu}>services</li>
+          <li>services</li>
         </ScrollLink>
         {/* <ScrollLink to={"pharmacist"}>
-          <li onClick={closeMenu}>pharmacist</li>
+          <li>pharmacist</li>
         </ScrollLink> */}
         <Link to="/products">
-          <li onClick={closeMenu}>products</li>
+          <li>products</li>
         </Link>
         <ScrollLink to={"testimonials"}>
-          <li onClick={closeMenu}>testimonials</li>
+          <li>testimonials</li>
         </ScrollLink>
         <ScrollLink to={"contactus"}>
-          <li onClick={closeMenu}>contact us</li>
+          <li>contact us</li>
         </ScrollLink>
+        <li>
         <Link className="add-to-cart" to="/cart">
-          <Cart/>
+          {
+          toggleMenu ? <CartIcon fill="#fff"/> : <CartIcon fill="#1E1E1E"/>
+          }
+          <span className="cart-counter">0</span>
         </Link>
+        </li>
       </ul>
     </nav>
   );
