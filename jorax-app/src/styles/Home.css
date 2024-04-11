@@ -1,144 +1,144 @@
 .banner-section {
-  background: url(../../public/assets/images/hero-bg-image.svg) top left/cover no-repeat rgba(255 255 255 / 8%);
+  background: url(../../public/assets/images/hero-bg-image.svg) top left/cover
+    no-repeat rgba(255 255 255 / 8%);
   margin-bottom: 0;
 }
 .banner-section .flex-container > * {
   /* margin-bottom: 0; */
 }
-.banner-section .flex-container-2 .img-container{
-  border-radius:20px;
+.banner-section .flex-container-2 .img-container {
+  border-radius: 20px;
 }
 
 .banner-section .img-container img {
-border-radius:inherit;
+  border-radius: inherit;
 }
-
 
 /* ================CARD SLIDE SECTION============== */
-.card-slide-section{
-background-color:var(--green-bg);
-/* padding:25px 8% ; */
+.card-slide-section {
+  background-color: var(--green-bg);
+  /* padding:25px 8% ; */
 }
 
-.card-slide-section .card-container{
-  border-radius:20px;
+.card-slide-section .card-container {
+  border-radius: 20px;
 }
-.card-slide-section h2{
-color:#fff;
+.card-slide-section h2 {
+  color: #fff;
 }
-.card-slide-section  .card{
-position: relative;
-border-radius:20px;
+.card-slide-section .card {
+  position: relative;
+  border-radius: 20px;
 }
 
-.card-slide-section .card .img-container{
-  border-radius:inherit;
+.card-slide-section .card .img-container {
+  border-radius: inherit;
 }
-.card-slide-section .card  .text-badge{
-display:inline-block;
-border-radius:0 0 0 20px;
-background-color:#fff;
-padding:10px;
-position:absolute;
-bottom:0;
-left:0;
-height:40px;
-/* width:140px; */
-color: #1E2CA8;
-font-weight:600;
+.card-slide-section .card .text-badge {
+  display: inline-block;
+  border-radius: 0 0 0 20px;
+  background-color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  /* width:140px; */
+  color: #1e2ca8;
+  font-weight: 600;
 }
 
 /* --------------CAROUSEL OVERIDE STYLES------------- */
 /* Note the .slick-slide is a default carousel card */
-.card-slide-section ul li{
-  border:2px solid #b8b7b7;
-  border-radius:50%;
-  padding:10px;
-  }
-  .card-slide-section ul li button{
-  background:transparent !important;
+.card-slide-section ul li {
+  border: 2px solid #b8b7b7;
+  border-radius: 50%;
+  padding: 10px;
+}
+.card-slide-section ul li button {
+  background: transparent !important;
   color: transparent !important;
-  }
-  .card-slide-section ul li button::before{
-  font-size:15px;
-  color:#fff !important;
-  position:absolute;
-  top:2px;
-  left:0;
-  margin:auto;
-  }
-  .card-slide-section .slick-prev, .slick-next {
+}
+.card-slide-section ul li button::before {
+  font-size: 15px;
+  color: #fff !important;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: auto;
+}
+.card-slide-section ul li button:hover::before {
+  color: #b8b7b7 !important;
+}
+.card-slide-section .slick-prev,
+.slick-next {
   display: none !important;
 }
 /* Give margin to the carousel */
 .card-slide-section .slick-slide > div {
   /* padding: 0 20px; */
-  margin:15px;
-  border-radius:20px;
+  margin: 15px;
+  border-radius: 20px;
 }
-
 
 /* =================SERVICEs and AboutUs Styles==================== */
-.services-section .img-container{
-border-radius:20px;
+.services-section .img-container {
+  border-radius: 20px;
 }
-.services-section .flex-container-2{
-justify-content:space-between;
-gap:10%;
-margin-bottom:4.8rem;
+.services-section .flex-container-2 {
+  justify-content: space-between;
+  gap: 10%;
+  margin-bottom: 4.8rem;
 }
-.services-section .flex-container-2>*{
-  flex-basis:42%;
+.services-section .flex-container-2 > * {
+  flex-basis: 42%;
 }
-.services-section .cta-btn-container{
-text-align:left;
+.services-section .cta-btn-container {
+  text-align: left;
 }
-
 
 /* ===============Why Us============= */
-.why-us-section{
-background:var(--green-bg);
-padding:40px 5%;
+.why-us-section {
+  background: var(--green-bg);
+  padding: 40px 5%;
 }
-.why-us-section h2{
-color:#fff;
+.why-us-section h2 {
+  color: #fff;
 }
-.why-us-section .card{
-background:#fff;
-border-radius:20px;
-padding:1rem;
+.why-us-section .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
 }
-.why-us-section .card .img-container{
-height:35px;
-width:35px;
-/* margin:auto; */
-margin-bottom:1rem;
+.why-us-section .card .img-container {
+  height: 35px;
+  width: 35px;
+  /* margin:auto; */
+  margin-bottom: 1rem;
 }
-
 
 /* ===============PARTNERS=========== */
-.our-partners-section{
-
+.our-partners-section {
 }
-.our-partners-section .card{
-padding:1.2rem;
-border: 1px solid #f8f8f8;
-border-radius:20px;
-min-height:180px;
-/* width:360px; */
-position: relative;
+.our-partners-section .card {
+  padding: 1.2rem;
+  border: 1px solid #f8f8f8;
+  border-radius: 20px;
+  min-height: 180px;
+  /* width:360px; */
+  position: relative;
 }
-.our-partners-section .card .cta-btn-container{
-text-align:left;
-position: absolute;
-bottom:0;
-left:0;
-width:100%;
-height:auto;
-padding:1.2rem;
+.our-partners-section .card .cta-btn-container {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 1.2rem;
 }
-.our-partners-section .card .cta-btn-primary{
-width:120px;
+.our-partners-section .card .cta-btn-primary {
+  width: 120px;
 }
 /* .our-partners-section .cta-primary-btn{
 position: absolute;
@@ -147,92 +147,85 @@ left:0;
 width:auto;
 height:auto;
 } */
-.our-partners-section h2{
-text-align:center;
+.our-partners-section h2 {
+  text-align: center;
 }
-.our-partners-section h5{
-font-weight:600;
-font-size: 1.2rem;
+.our-partners-section h5 {
+  font-weight: 600;
+  font-size: 1.2rem;
 }
-
 
 /* ===============Testimonials============== */
-.testimonials-section h2{
-color:var(--green-color);
-text-align:center;
+.testimonials-section h2 {
+  color: var(--green-color);
+  text-align: center;
 }
-.testimonials-section .card{
-box-shadow:none;
+.testimonials-section .card {
+  box-shadow: none;
 }
-.testimonials-section .top-section{
-/* border:1px solid red; */
-padding:1rem;
-border-radius:8px;
-background: #F5F7F5;
-/* height:200px; */
-display:flex;
+.testimonials-section .top-section {
+  /* border:1px solid red; */
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f5f7f5;
+  /* height:200px; */
+  display: flex;
 }
-.testimonials-section .img-container{
-width:56px;
-height:56px;
-margin:1.2rem auto;
+.testimonials-section .img-container {
+  width: 56px;
+  height: 56px;
+  margin: 1.2rem auto;
 }
-.testimonials-section h4{
-text-align:center;
-font-weight:600;
-font-size:1rem;
+.testimonials-section h4 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
 }
-.testimonials-section .top-section p{
-/* line-height:200px; */
-margin:auto;
+.testimonials-section .top-section p {
+  /* line-height:200px; */
+  margin: auto;
 }
-.testimonials-section ul li{
-  border:2px solid #b8b7b7;
-  border-radius:50%;
-  padding:10px;
-  }
-  .testimonials-section ul li button{
-  background:transparent !important;
+.testimonials-section ul li {
+  border: 2px solid #b8b7b7;
+  border-radius: 50%;
+  padding: 10px;
+}
+.testimonials-section ul li button {
+  background: transparent !important;
   color: transparent !important;
-  }
-  .testimonials-section ul li button::before{
-  font-size:15px;
-  color: #1E2CA8 !important;
-  position:absolute;
-  top:2px;
-  left:0;
-  margin:auto;
-  }
-  .testimonials-section ul li button:hover::before{
+}
+.testimonials-section ul li button::before {
+  font-size: 15px;
+  color: #1e2ca8 !important;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: auto;
+}
+.testimonials-section ul li button:hover::before {
   color: #b8b7b7 !important;
-  }
-  .testimonials-section .slick-prev, .slick-next {
+}
+.testimonials-section .slick-prev,
+.slick-next {
   display: none !important;
 }
 
-
-
-
-
-
-
 /* DESKTOP DEVICE */
-@media(min-width:980px){
-  .why-us-section .card{
-  min-height:450px;
+@media (min-width: 980px) {
+  .why-us-section .card {
+    min-height: 450px;
   }
-  .why-us-section{
-    background:var(--green-bg);
-    padding:80px 8%;
-    }
-    .our-partners-section .card{
-    height:280px;
-    }
-    .our-partners-section h5{
-    font-size:2rem;
-    }
-    .testimonials-section .top-section{
-    height:200px;
-    }
-
+  .why-us-section {
+    background: var(--green-bg);
+    padding: 80px 8%;
+  }
+  .our-partners-section .card {
+    height: 280px;
+  }
+  .our-partners-section h5 {
+    font-size: 2rem;
+  }
+  .testimonials-section .top-section {
+    height: 200px;
+  }
 }
