@@ -46,7 +46,7 @@
   display: none;
 }
 .close-nav-container {
-  position:fixed;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100%;
@@ -58,19 +58,26 @@
   z-index: 1020;
 }
 
-
-
 /* ===================Cart Section============== */
 
-.add-to-cart{
-/* border:1px solid red; */
+.add-to-cart {
+  position: relative;
+  z-index: 1000;
 }
-
-
-
-
-
-
+.add-to-cart .cart-counter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: #fff;
+  width: 15px;
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 998;
+}
 
 /* ================================
   Media Queries for diff devices

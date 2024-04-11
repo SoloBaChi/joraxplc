@@ -78,7 +78,7 @@ font-weight:600;
 }
 
 
-/* =================SERVICEs==================== */
+/* =================SERVICEs and AboutUs Styles==================== */
 .services-section .img-container{
 border-radius:20px;
 }
@@ -202,6 +202,9 @@ margin:auto;
   top:2px;
   left:0;
   margin:auto;
+  }
+  .testimonials-section ul li button:hover::before{
+  color: #b8b7b7 !important;
   }
   .testimonials-section .slick-prev, .slick-next {
   display: none !important;
