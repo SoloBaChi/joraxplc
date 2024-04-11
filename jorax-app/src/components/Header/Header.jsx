@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 
-const Header = (props) => {
+const Header = ({ cartItem }) => {
   return (
     <header className="header">
       <div className="header-container">
@@ -13,7 +13,7 @@ const Header = (props) => {
             </Link>
           </div>
         </div>
-        <NavBar />
+        <NavBar cartItem={cartItem} />
       </div>
     </header>
   );

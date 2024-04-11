@@ -1,1 +1,62 @@
 /* ABout us styles goes here */
+
+/* About us Styles */
+.services-section.aboutus h2 {
+  text-align: center;
+}
+.services-section.aboutus h3 {
+  color: var(--green-color);
+}
+.services-section.aboutus .read-more {
+  max-height: 240px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.services-section.aboutus .active {
+  overflow: auto;
+  max-height: 500px;
+  transition: max-height 0.2s linear;
+  padding: 1rem;
+}
+.services-section.aboutus .active::-webkit-scrollbar {
+  height: 5px;
+  width: 4px;
+}
+.services-section.aboutus .active::-webkit-scrollbar-thumb {
+  background: red;
+  background: var(--green-bg);
+  border-radius: 8px;
+}
+
+
+
+/* -----------------WHAT WE SPECIALIZE -------------- */
+.our-specialization {
+  background: var(--green-bg);
+  margin-bottom: 0;
+  padding: 45px 5%;
+}
+.our-specialization h3 {
+  color: #fff;
+  text-align: center;
+}
+.our-specialization .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1rem;
+}
+.our-specialization .card .img-container {
+  height: 35px;
+  width: 35px;
+  /* margin:auto; */
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 980px) {
+  .our-specialization {
+    padding: 45px 8%;
+  }
+  .our-specialization .card {
+    min-height: 450px;
+  }
+}

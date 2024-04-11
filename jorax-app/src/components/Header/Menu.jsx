@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ScrollLink from "../common/ScrollLink";
 import CartIcon from "../shared/icons/CartIcon";
 
-function Menu({toggleMenu}) {
+function Menu({ toggleMenu, cartItem }) {
   return (
     <nav className="nav-menu">
       <ul className="list-menu">
@@ -14,7 +14,7 @@ function Menu({toggleMenu}) {
           </Link>
         </li>
         <li>
-        <Link to="/aboutus"> about us</Link>
+          <Link to="/aboutus"> about us</Link>
         </li>
         <ScrollLink to={"services"}>
           <li>services</li>
@@ -32,12 +32,16 @@ function Menu({toggleMenu}) {
           <li>contact us</li>
         </ScrollLink>
         <li>
-        <Link className="add-to-cart" to="/cart">
-          {
-          toggleMenu ? <CartIcon fill="#fff"/> : <CartIcon fill="#1E1E1E"/>
-          }
-          <span className="cart-counter">0</span>
-        </Link>
+          <Link className="add-to-cart" to="/cart">
+            {toggleMenu ? (
+              <CartIcon fill="#fff" />
+            ) : (
+              <CartIcon fill="#1E1E1E" />
+            )}
+            {cartItem.length > 0 && (
+              <span className="cart-counter">{cartItem.length}</span>
+            )}
+          </Link>
         </li>
       </ul>
     </nav>

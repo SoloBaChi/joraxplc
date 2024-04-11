@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 const Footer = (props) => {
   const year = new Date().getFullYear();
 
@@ -11,11 +10,12 @@ const Footer = (props) => {
       <section className="footer-container">
         <div className="flex-container-2 flex-1">
           <div className="place-left" id={"contactus"}>
-            <div className="logo-container">
+            <Link to="/" className="logo-container">
               <img src={`/assets/images/footer-logo.svg`} alt="footer" />
-            </div>
+            </Link>
             <p>
-            Jorax Healthcare Ltd Office address: 149 Hilltop Road, Abakaliki, Ebonyi, Flat 3, 1st Floor
+              Jorax Healthcare Ltd Office address: 149 Hilltop Road, Abakaliki,
+              Ebonyi, Flat 3, 1st Floor
             </p>
             <p>
               Join our newsletter to stay up to date on our products and
@@ -32,9 +32,9 @@ const Footer = (props) => {
               <div className="form-field">
                 <input type="email" placeholder="Enter your email" required />
                 <div className="cta-btn-container">
-                <button className="cta-btn-primary" type="submit">
-                  subscribe
-                </button>
+                  <button className="cta-btn-primary" type="submit">
+                    subscribe
+                  </button>
                 </div>
               </div>
             </form>
@@ -94,41 +94,51 @@ const Footer = (props) => {
         {/* draw a horizontal line */}
         <hr></hr>
         <div className="flex-container-2 flex-2">
-        <div className="flex-item">
+          <div className="flex-item">
             <h5>join us on</h5>
             <div className="social-media-links">
-            <div className="inner-flex-2">
-              <Link to="https://www.instagram.com/joraxhealthcareltd?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="
-               className="img-container"
-               target="_blank"
-               >
-                <img src={`/assets/social-media/instagram.svg`} alt="instagram" />
-              </Link>
-              <Link to="/"
-               className="img-container"
-               target="_blank"
-               >
-                <img src={`/assets/social-media/youtube.svg`} alt="youtube" />
-              </Link>
-              <Link to="https://www.facebook.com/profile.php/?id=100068664810886&name=xhp_nt__fb__action__open_user"
-               className="img-container"
-               target="_blank"
-               >
-                <img src={`/assets/social-media/facebook.svg`} alt="facebook" />
-              </Link>
-              <Link to="https://www.linkedin.com/posts/joraxhealthcare_how-do-you-feel-about-jorax-today-activity-7168630335381962755-fF7O/?utm_source=share&utm_medium=member_android"
-               className="img-container"
-               target="_blank"
-               >
-                <img src={`/assets/social-media/linkedin.svg`} alt="linkedin" />
-              </Link>
-              <Link to="https://x.com/JoraxLtd?t=anIrKE0A2pUmiPaPM1IawA&s=08"
-               className="img-container"
-               target="_blank"
-               >
-                <img src={`/assets/social-media/twitter.svg`} alt="twitter" />
-              </Link>
-            </div>
+              <div className="inner-flex-2">
+                <Link
+                  to="https://www.instagram.com/joraxhealthcareltd?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw=="
+                  className="img-container"
+                  target="_blank"
+                >
+                  <img
+                    src={`/assets/social-media/instagram.svg`}
+                    alt="instagram"
+                  />
+                </Link>
+                <Link to="/" className="img-container" target="_blank">
+                  <img src={`/assets/social-media/youtube.svg`} alt="youtube" />
+                </Link>
+                <Link
+                  to="https://www.facebook.com/profile.php/?id=100068664810886&name=xhp_nt__fb__action__open_user"
+                  className="img-container"
+                  target="_blank"
+                >
+                  <img
+                    src={`/assets/social-media/facebook.svg`}
+                    alt="facebook"
+                  />
+                </Link>
+                <Link
+                  to="https://www.linkedin.com/posts/joraxhealthcare_how-do-you-feel-about-jorax-today-activity-7168630335381962755-fF7O/?utm_source=share&utm_medium=member_android"
+                  className="img-container"
+                  target="_blank"
+                >
+                  <img
+                    src={`/assets/social-media/linkedin.svg`}
+                    alt="linkedin"
+                  />
+                </Link>
+                <Link
+                  to="https://x.com/JoraxLtd?t=anIrKE0A2pUmiPaPM1IawA&s=08"
+                  className="img-container"
+                  target="_blank"
+                >
+                  <img src={`/assets/social-media/twitter.svg`} alt="twitter" />
+                </Link>
+              </div>
             </div>
           </div>
           <p>{year} Jorax Healthcare! All right reserved.</p>
