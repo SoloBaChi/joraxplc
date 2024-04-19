@@ -42,7 +42,7 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
                 </div>
                 <div className="flex-item">
                   <div className="price-container">
-                    <p>N {item.price * item.qty}.00</p>
+                    <p>₦ {item.price * item.qty}.00</p>
                     <div className="inner-flex">
                       <div className="flex-item">
                         <button
@@ -78,7 +78,7 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
           <h4>cart summary</h4>
           <div className="subtotal price-container">
             <p>
-              Sub Total : <span> N {totalPrice}</span>
+              Sub Total : <span> ₦ {totalPrice}</span>
             </p>
           </div>
           <div className="cta-btn-container">
