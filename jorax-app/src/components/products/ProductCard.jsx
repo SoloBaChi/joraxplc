@@ -24,7 +24,7 @@ function ProductCard({imgSrc,title,price,description,item,addToCart}) {
           </div>
           <div className="flex-container-2 price">
             <div className="flex-item">
-                <p>${price}.00</p>
+                <p>N {price}.00</p>
             </div>
             <div className="flex-item">
              <div className="cta-btn-container">

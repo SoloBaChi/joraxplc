@@ -1,12 +1,11 @@
-
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Main from "./components/common/Main";
-import  { ProductItems } from "./components/products/ProductData";
+import { ProductItems } from "./components/products/ProductData";
 
 function App() {
-//Some Functionality were done here which is the root top most component
+  //Some Functionality were done here which is the root top most component
   // steps
   // fetch the data from the database
   // console.log(ProductItems)
@@ -43,7 +42,7 @@ function App() {
   };
 
   // DECREASE CART QUANTITY
-  const decreasQuantity = (product) => {
+  const decreaseQuantity = (product) => {
     const exisitingProduct = cartItem.find((item) => item.id === product.id);
     // get the product quantity
     if (exisitingProduct.qty === 1) {
@@ -61,12 +60,12 @@ function App() {
 
   return (
     <div className="any-class">
-      <Main 
-      cartItem={cartItem} 
-      addToCart={addToCart} 
-      removeFromCart={removeFromCart}
-      decreasQuantity={decreasQuantity}
-      ProductItems ={ ProductItems}
+      <Main
+        cartItem={cartItem}
+        addToCart={addToCart}
+        removeFromCart={removeFromCart}
+        decreaseQuantity={decreaseQuantity}
+        ProductItems={ProductItems}
       />
 
       {/* <LaunchCountDown/> */}

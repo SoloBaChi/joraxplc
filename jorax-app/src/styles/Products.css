@@ -1,61 +1,54 @@
-
-
 /*========================Products Styles=================*/
-.product-section{
-
+.product-section {
 }
 .product-section h2,
-.product-section h3
-{
-color:var(--green-color);
+.product-section h3 {
+  color: var(--green-color);
 }
-.product-section h3{
-text-align:center;
-}
-
-.product-section > .flex-container-2{
-align-items:flex-start;
-margin-bottom:3.5rem;
-}
-.product-section > .flex-container-2 .img-container{
- border-radius:20px;
+.product-section h3 {
+  text-align: center;
 }
 
-
+.product-section > .flex-container-2 {
+  align-items: flex-start;
+  margin-bottom: 3.5rem;
+}
+.product-section > .flex-container-2 .img-container {
+  border-radius: 20px;
+}
 
 /* ===============Product Card styles============= */
-.product-section .card{
-border-radius:20px;
-/* width:360px; */
-/* height:600px; */
+.product-section .card {
+  border-radius: 20px;
+  /* width:360px; */
+  /* height:600px; */
 }
-.product-section .card .top-section{
-height:380px;
-background:#cceedd;
-border-radius:20px 20px 0 0 ;
-text-align:center;
-overflow:hidden;
+.product-section .card .top-section {
+  height: 380px;
+  background: #cceedd;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+  overflow: hidden;
 }
-.product-section .card .top-section .img-container{
-/* h */
-display:inline-block;
-border-radius:inherit;
+.product-section .card .top-section .img-container {
+  /* h */
+  display: inline-block;
+  border-radius: inherit;
 }
-.product-section .card .top-section .img-container img{
-height:fit-content;
+.product-section .card .top-section .img-container img {
+  height: fit-content;
 }
-.product-section .card .bottom-section{
-padding:1.2rem;
+.product-section .card .bottom-section {
+  padding: 1.2rem;
 }
-.product-section .card .bottom-section .flex-container-2{
-display:flex;
-justify-content:space-between;
-align-items:center;
+.product-section .card .bottom-section .flex-container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.product-section .card .bottom-section .flex-container-2>*{
-margin-bottom:0;
+.product-section .card .bottom-section .flex-container-2 > * {
+  margin-bottom: 0;
 }
-.product-section .card .bottom-section button{
-margin-top:0;
+.product-section .card .bottom-section button {
+  margin-top: 0;
 }
-

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 // import { Link } from "react-router-dom";
 import Footer from "../footer/Footer";
 import Speciliazations from "./AboutusData";
