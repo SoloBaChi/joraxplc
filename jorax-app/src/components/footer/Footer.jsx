@@ -138,6 +138,13 @@ const Footer = (props) => {
                 >
                   <img src={`/assets/social-media/twitter.svg`} alt="twitter" />
                 </Link>
+                <Link
+                  to="https://x.com/JoraxLtd?t=anIrKE0A2pUmiPaPM1IawA&s=08"
+                  className="img-container"
+                  target="_blank"
+                >
+                  <img src={`/assets/social-media/whatsapp .svg`} alt="twitter" />
+                </Link>
               </div>
             </div>
           </div>

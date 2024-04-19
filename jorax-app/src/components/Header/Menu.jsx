@@ -16,23 +16,22 @@ function Menu({ toggleMenu, cartItem }) {
         <li>
           <Link to="/aboutus"> about us</Link>
         </li>
-        <ScrollLink to={"services"}>
-          <li>services</li>
-        </ScrollLink>
         {/* <ScrollLink to={"pharmacist"}>
           <li>pharmacist</li>
         </ScrollLink> */}
-        <Link to="/products">
-          <li>products</li>
-        </Link>
-        <ScrollLink to={"testimonials"}>
-          <li>testimonials</li>
-        </ScrollLink>
-        <ScrollLink to={"contactus"}>
+        <li>
+          <Link to="/products">products</Link>
+        </li>
+        <li>
+          <Link to="/">account</Link>
+        </li>
+
+        {/* <ScrollLink to={"contactus"}>
           <li>contact us</li>
-        </ScrollLink>
+        </ScrollLink> */}
         <li>
           <Link className="add-to-cart" to="/cart">
+            cart
             {toggleMenu ? (
               <CartIcon fill="#fff" />
             ) : (

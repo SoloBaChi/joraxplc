@@ -28,7 +28,7 @@ const NavBar = ({ cartItem }) => {
             <RiCloseLine className="close-btn-icon" />
           </div>
           <div>
-            <Menu toggleMenu={toggleNavMenu} />
+            <Menu cartItem={cartItem} toggleMenu={toggleNavMenu} />
           </div>
         </div>
       )}

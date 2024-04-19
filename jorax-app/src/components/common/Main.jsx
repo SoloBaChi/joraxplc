@@ -6,14 +6,30 @@ import Cart from "../cart/Cart";
 import Products from "../products/Products";
 import Aboutus from "../aboutus/Aboutus";
 
-function Main({ addToCart, removeFromCart, cartItem, ProductItems }) {
+function Main({
+  addToCart,
+  removeFromCart,
+  cartItem,
+  ProductItems,
+  decreaseQuantity,
+}) {
   return (
     <>
       <Router>
         <Header cartItem={cartItem} />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/cart" element={<Cart cartItem={cartItem} />} />
+          <Route
+            path="/cart"
+            element={
+              <Cart
+                cartItem={cartItem}
+                addToCart={addToCart}
+                removeFromCart={removeFromCart}
+                decreaseQuantity={decreaseQuantity}
+              />
+            }
+          />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route
             path="/products"
