@@ -1,0 +1,83 @@
+/* ==========AUth Styles ============ */
+.auth-section {
+  /* border: 1px solid red; */
+}
+.auth-section .form-container form {
+  /* border: 1px solid green; */
+}
+.auth-section .form-container .form-field {
+  /* width: 100%; */
+}
+.auth-section .form-container textarea,
+.auth-section .form-container input {
+  border: 1px solid #444844;
+  border-radius: 10px;
+  padding: 14px 10px;
+}
+.auth-section .form-container label {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.auth-section .form-container label.checkbox {
+  display: inline-block;
+}
+.auth-section .form-container label.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.auth-section .form-container label.checkbox input {
+  display: inline-block;
+  width: 28px;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid #00ac57;
+  line-height: 20px;
+}
+.auth-section .form-container .link-text {
+  display: inline-block;
+  color: var(--green-color);
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.auth-section .form-container .flex-container-2.bottom {
+  justify-content: flex-start;
+  align-items: center;
+}
+.auth-section .form-container .flex-container-2.bottom > * {
+  flex-basis: auto;
+}
+.auth-section .form-container .cta-btn-container {
+  text-align: initial;
+}
+.auth-section .form-container .single .icon-container {
+  position: absolute;
+  top: 70%;
+  transform: translate(0%, -50%);
+  left: 10px;
+  cursor: pointer;
+  display: inline-block;
+  z-index: -1;
+  color: #d2d2d2;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+.auth-section .form-container .single input {
+  /* text-indent: 2rem; */
+}
+.auth-section .form-container .single input::placeholder {
+}
+.form-container .form-field.upload .upload-wrapper {
+  border: 1px solid #444844;
+  border-radius: 10px;
+}
+.form-container .form-field.upload input {
+  z-index: 1010;
+  opacity: 0;
+}
+.form-container .verify {
+  color: #00ac57;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
