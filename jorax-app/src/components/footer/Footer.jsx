@@ -143,7 +143,10 @@ const Footer = (props) => {
                   className="img-container"
                   target="_blank"
                 >
-                  <img src={`/assets/social-media/whatsapp .svg`} alt="twitter" />
+                  <img
+                    src={`/assets/social-media/whatsapp .svg`}
+                    alt="twitter"
+                  />
                 </Link>
               </div>
             </div>

@@ -75,7 +75,7 @@ button {
   text-transform: capitalize;
   cursor: pointer;
   text-align: center;
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 .blank-cta-btn {
   background: #ffffff;
@@ -181,6 +181,16 @@ form .form-field textarea {
   box-shadow: none;
   outline: none;
 }
+form .form-field .eye-icon-container {
+  position: absolute;
+  top: 70%;
+  transform: translate(0%, -50%);
+  right: 15px;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
 .hr-line {
   background: #e2dcff;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -222,7 +232,7 @@ form .form-field textarea {
     font-size: 1rem;
   }
   .form-field {
-    width: 50%;
+    /* width: 50%; */
   }
   .flex-container-2 {
     display: flex;

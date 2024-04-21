@@ -5,6 +5,11 @@ import LandingPage from "./LandingPage";
 import Cart from "../cart/Cart";
 import Products from "../products/Products";
 import Aboutus from "../aboutus/Aboutus";
+import Register from "../auth/Register/Register";
+import Login from "../auth/login/Login";
+import Distributor from "../auth/Register/Distributor";
+import SalesRep from "../auth/Register/SalesRep";
+import Affliate from "../auth/Register/Affliate";
 
 function Main({
   addToCart,
@@ -41,6 +46,11 @@ function Main({
               />
             }
           />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/distributor" element={<Distributor />} />
+          <Route path="/sales-rep" element={<SalesRep />} />
+          <Route path="/affliate" element={<Affliate />} />
         </Routes>
         {/* <Footer /> */}
       </Router>
