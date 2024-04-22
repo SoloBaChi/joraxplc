@@ -23,9 +23,9 @@ const NavBar = ({ cartItem }) => {
         </div>
       </div>
       {toggleMenu && (
-        <div className="close-nav-container" onClick={toggleNavMenu}>
+        <div className="close-nav-container">
           <div className="close-toggle-btn toggle-btn">
-            <RiCloseLine className="close-btn-icon" />
+            <RiCloseLine className="close-btn-icon" onClick={toggleNavMenu} />
           </div>
           <div>
             <Menu cartItem={cartItem} toggleMenu={toggleNavMenu} />

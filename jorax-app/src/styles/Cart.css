@@ -9,7 +9,7 @@
   align-items: flex-start;
 }
 .cart-section > .flex-container-2 > * {
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .cart-section > .flex-container-2 > *:first-child {
   flex-basis: 72%;
@@ -18,14 +18,20 @@
   flex-basis: 22%;
 }
 .cart-section .product-card {
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+.cart-section .product-card > * {
+  margin-bottom: 3.5rem;
+}
+.cart-section .product-card > .flex-container-2 > * {
+  /* border: 1px solid green; */
 }
 .cart-section .product-card > .flex-container-2 > :first-child {
-  border: 1px solid red;
-  flex-basis: 72%;
+  flex-basis: 68%;
+  margin-right: auto;
 }
 .cart-section .product-card > .flex-container-2 > :last-child {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex-basis: 22%;
 }
 .cart-section .product-card .img-container {
@@ -33,4 +39,40 @@
 .cart-section .product-card .price-container p {
   font-weight: 700;
   font-size: 1.25rem;
+}
+
+/* =================Delete icon , add e.t.c in the cart Section================ */
+.cart-section .product-card button,
+.cart-section .remove-cart {
+  /* border: 1px solid red; */
+  background: none;
+  color: var(--green-color);
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0;
+  display: block;
+}
+.cart-section .cta-btn-container.flex-container-2 {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.cart-section .cta-btn-container.flex-container-2 > * {
+  flex-basis: auto;
+  margin-bottom: 0;
+}
+.cart-section .price-container .inner-flex {
+  display: flex;
+  gap: 4%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.cart-section .subtotal + .cta-btn-container {
+  text-align: initial;
+  margin-top: 1.5rem;
+}
+.cart-section .top-section .img-container {
+  display: inline-block;
 }
