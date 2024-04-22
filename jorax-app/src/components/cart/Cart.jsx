@@ -1,4 +1,7 @@
 import React from "react";
+import DeleteIcon from "../shared/icons/DeleteIcon";
+import AddCartIcon from "../shared/icons/AddCartIcon";
+import SubtractCartIcon from "../shared/icons/SubtractCartIcon";
 
 function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
   console.log(cartItem);
@@ -15,17 +18,21 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
       <div className="flex-container-2">
         <div className="flex-item">
           {cartItem.map((item, index) => (
-            <figure className="product-card">
+            <figure className="product-card" key={index}>
               <div className="flex-item flex-container-2">
                 <div className="flex-item flex-container-2">
                   <div className="top-section">
                     <div className="img-container">
                       <img src={item.imgSrc} alt={item.title} />
                     </div>
-                    <div className="cta-btn-container">
-                      <button onClick={() => removeFromCart(item)}>
-                        remove
+                    <div
+                      className="cta-btn-container flex-container-2"
+                      onClick={() => removeFromCart(item)}
+                    >
+                      <button>
+                        <DeleteIcon />
                       </button>
+                      <span className="remove-cart">Remove</span>
                     </div>
                   </div>
                   <div className="bottom-section">
@@ -49,9 +56,8 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
                           onClick={() => {
                             addToCart(item);
                           }}
-                          className="cta-btn-primary"
                         >
-                          add
+                          <AddCartIcon />
                         </button>
                       </div>
                       <div className="flex-item">
@@ -62,9 +68,8 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
                           onClick={() => {
                             decreaseQuantity(item);
                           }}
-                          className="cta-btn-primary"
                         >
-                          minus
+                          <SubtractCartIcon />
                         </button>
                       </div>
                     </div>
