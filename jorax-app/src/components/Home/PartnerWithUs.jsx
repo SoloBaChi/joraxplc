@@ -9,7 +9,11 @@ function PartnerWithUs(props) {
         <figure className="card">
           <h5>become a distributor</h5>
           <div className="cta-btn-container">
-            <Link className="cta-btn-primary" to="/distributor">
+            <Link
+              className="cta-btn-primary"
+              to="https://forms.gle/XQ1MQR2ZLB8MTwnu6"
+              target="_blank"
+            >
               Apply
             </Link>
           </div>
@@ -17,7 +21,11 @@ function PartnerWithUs(props) {
         <figure className="card">
           <h5>become a sales represntative</h5>
           <div className="cta-btn-container">
-            <Link className="cta-btn-primary" to="/sales-rep">
+            <Link
+              className="cta-btn-primary"
+              to="https://forms.gle/xJasHUgJfZYxP8TJ9"
+              target="_blank"
+            >
               Apply
             </Link>
           </div>
@@ -25,7 +33,11 @@ function PartnerWithUs(props) {
         <figure className="card">
           <h5>become an affliate marketer</h5>
           <div className="cta-btn-container">
-            <Link className="cta-btn-primary" to="/affliate">
+            <Link
+              className="cta-btn-primary"
+              to="https://forms.gle/QZhmGcsTay9giQbh8"
+              target="_blank"
+            >
               Apply
             </Link>
           </div>

@@ -13,20 +13,20 @@ function UploadIcon(props) {
         <path
           d="M7 6L11 2L15 6"
           stroke="#444844"
-          stroke-width="1.5"
-          stroke-linecap="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
         />
         <path
           d="M11 2V15.2859"
           stroke="#444844"
-          stroke-width="1.5"
-          stroke-linecap="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
         />
         <path
           d="M1 16V22H21V16"
           stroke="#444844"
-          stroke-width="1.5"
-          stroke-linecap="round"
+          strokeWidth="1.5"
+          strokeLinecap="round"
         />
       </svg>
     </span>

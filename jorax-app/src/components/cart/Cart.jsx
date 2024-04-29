@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import DeleteIcon from "../shared/icons/DeleteIcon";
 import AddCartIcon from "../shared/icons/AddCartIcon";
 import SubtractCartIcon from "../shared/icons/SubtractCartIcon";
 
 function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
-  console.log(cartItem);
   const totalPrice = cartItem.reduce(function (price, val) {
     return price + val.price * val.qty;
   }, 0);
+  useEffect(() => {
+    localStorage.setItem("totalPrice", totalPrice);
+    localStorage.setItem("numberOfItems", cartItem.length);
+  }, [totalPrice, cartItem.length]);
   return (
     <section className="cart-section">
       {cartItem.length === 0 && (
@@ -87,7 +91,9 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
             </p>
           </div>
           <div className="cta-btn-container">
-            <button className="cta-btn-primary">checkout</button>
+            <Link to="/checkout" className="cta-btn-primary">
+              checkout
+            </Link>
           </div>
         </div>
       </div>
