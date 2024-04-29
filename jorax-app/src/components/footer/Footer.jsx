@@ -15,7 +15,7 @@ const Footer = (props) => {
             </Link>
             <p>
               Jorax Healthcare Ltd Office address: 149 Hilltop Road, Abakaliki,
-              Ebonyi, Flat 3, 1st Floor
+              Ebonyi, Flat 3, 1st Floor
             </p>
             <p>
               Join our newsletter to stay up to date on our products and
@@ -139,13 +139,13 @@ const Footer = (props) => {
                   <img src={`/assets/social-media/twitter.svg`} alt="twitter" />
                 </Link>
                 <Link
-                  to="https://x.com/JoraxLtd?t=anIrKE0A2pUmiPaPM1IawA&s=08"
+                  to="https://chat.whatsapp.com/BtoB86eNjAT9duAJRmFdBg"
                   className="img-container"
                   target="_blank"
                 >
                   <img
-                    src={`/assets/social-media/whatsapp .svg`}
-                    alt="twitter"
+                    src={`/assets/social-media/whatsapp.svg`}
+                    alt="wbhatsapp"
                   />
                 </Link>
               </div>

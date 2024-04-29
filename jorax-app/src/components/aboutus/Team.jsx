@@ -101,7 +101,7 @@ function Team(props) {
                 </Link>
               </div>
               <p className="member-title">
-                Director of Finance Jorax Healthcare Ltd.
+                Director of Foods and Natural Medicines.
               </p>
             </div>
             <div className="bottom-section">

@@ -1,0 +1,30 @@
+/* Checkout styles here */
+.checkout-section h6 {
+  font-size: 1rem;
+}
+.checkout-section h3 {
+  font-size: 1.2rem;
+  color: #00ac57;
+}
+.checkout-section > p {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.checkout-section p.ac-num {
+  text-decoration: 4px underline #00ac57;
+}
+.checkout-section p.ac-num span {
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+}
+.checkout-section ul {
+  padding: 1rem;
+  list-style-type: disc;
+}
+.checkout-section .cta-btn-container {
+  text-align: left;
+}
+.checkout-section p span {
+  font-weight: 700;
+}

@@ -10,6 +10,7 @@ import Login from "../auth/login/Login";
 import Distributor from "../auth/Register/Distributor";
 import SalesRep from "../auth/Register/SalesRep";
 import Affliate from "../auth/Register/Affliate";
+import Checkout from "../cart/Checkout";
 
 function Main({
   addToCart,
@@ -35,6 +36,7 @@ function Main({
               />
             }
           />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route
             path="/products"

@@ -11,7 +11,7 @@ function App() {
   // console.log(ProductItems)
 
   // process with the  cart details
-  const [cartItem, setCartItem] = useState([]);
+  const [cartItem, setCartItem] = useState(handleCartItems);
 
   // ADD TO CART
   const addToCart = (product) => {
@@ -57,6 +57,18 @@ function App() {
       );
     }
   };
+
+  // store added cart items
+  function handleCartItems() {
+    // convert the returned carts to plain js object
+    const addedCartItems = JSON.parse(localStorage.getItem("cartItems"));
+    return addedCartItems || [];
+  }
+  useEffect(() => {
+    // convert the stored carts in JSON format
+    const storage = JSON.stringify(cartItem);
+    localStorage.setItem("cartItems", storage);
+  }, [cartItem]);
 
   return (
     <div className="any-class">

@@ -1,7 +1,7 @@
 .banner-section {
   background: url(../../public/assets/images/hero-bg-image.svg) top left/cover
     no-repeat rgba(255 255 255 / 8%);
-  margin-bottom: 0;
+  margin-bottom: 8.5rem;
 }
 .banner-section .flex-container > * {
   /* margin-bottom: 0; */
