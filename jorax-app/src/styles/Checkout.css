@@ -28,3 +28,7 @@
 .checkout-section p span {
   font-weight: 700;
 }
+.checkout-section .cta-btn-container a {
+  padding: 0;
+  color: #fff;
+}

@@ -57,7 +57,9 @@
   display: flex;
   cursor: pointer;
 }
-
+.cart-section .cta-btn-container button:disabled {
+  background: #7c7c7c;
+}
 .cart-section .cta-btn-container.flex-container-2 > * {
   flex-basis: auto;
   margin-bottom: 0;

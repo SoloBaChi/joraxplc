@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import DeleteIcon from "../shared/icons/DeleteIcon";
 import AddCartIcon from "../shared/icons/AddCartIcon";
 import SubtractCartIcon from "../shared/icons/SubtractCartIcon";
 
 function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
+  const navigate = useNavigate();
   const totalPrice = cartItem.reduce(function (price, val) {
     return price + val.price * val.qty;
   }, 0);
@@ -91,9 +92,15 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
             </p>
           </div>
           <div className="cta-btn-container">
-            <Link to="/checkout" className="cta-btn-primary">
+            <button
+              onClick={() => {
+                navigate("/checkout");
+              }}
+              className="cta-btn-primary"
+              disabled={cartItem.length === 0}
+            >
               checkout
-            </Link>
+            </button>
           </div>
         </div>
       </div>
