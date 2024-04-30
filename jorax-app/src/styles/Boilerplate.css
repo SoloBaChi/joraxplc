@@ -18,7 +18,6 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  opacity: 0;
 }
 *,
 *::before,
