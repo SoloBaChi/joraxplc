@@ -35,12 +35,13 @@ function Checkout(props) {
         </li>
       </ul>
       <div className="cta-btn-container">
-        <Link
-          to={`https://wa.me/+2348166356458?text=Hello+Jorax+I+have+place+an+order+for+${cartItems}+Jorax+Palm+Oil+which+amount+to+${totalPrice}+Please+attached+your+transaction+file+to+continue`}
-          className="cta-btn-primary"
-        >
-          proceed to continue
-        </Link>
+        <button className="cta-btn-primary">
+          <Link
+            to={`https://wa.me/+2348166356458?text=Hello+Jorax+I+have+place+an+order+for+${cartItems}+Jorax+Palm+Oil+which+amount+to+${totalPrice}+Below+as+an+attached+file+for+my+transaction`}
+          >
+            proceed to continue
+          </Link>
+        </button>
       </div>
     </section>
   );
