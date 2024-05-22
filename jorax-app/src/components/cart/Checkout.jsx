@@ -30,6 +30,11 @@ function Checkout(props) {
           </div>
         </li>
         <li>
+          <p>
+            Total Amount: <span>₦ {totalPrice}</span>
+          </p>
+        </li>
+        <li>
           Send Evidence of payment to our whatsapp respondent by clicking on the{" "}
           <code>proceed to continue</code> button below
         </li>
@@ -37,7 +42,7 @@ function Checkout(props) {
       <div className="cta-btn-container">
         <button className="cta-btn-primary">
           <Link
-            to={`https://wa.me/+2348166356458?text=Hello+Jorax+I+have+place+an+order+for+${cartItems}+Jorax+Palm+Oil+which+amount+to+${totalPrice}+Below+as+an+attached+file+for+my+transaction`}
+            to={`https://wa.me/+2348166356458?text=Hello+Jorax+I+have+placed+an+order+for+${cartItems}+Jorax+Palm+Oil +${totalPrice}+and+paid+via+bank+transfer+Below+is+attached+the+transaction+receipt+for+your+reference.`}
           >
             proceed to continue
           </Link>

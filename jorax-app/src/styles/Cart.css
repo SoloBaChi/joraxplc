@@ -57,6 +57,12 @@
   display: flex;
   cursor: pointer;
 }
+.cart-section .cta-btn-container.group-btns > * {
+  /* display: flex;
+  gap: 4%;
+  justify-content: space-between; */
+  margin-bottom: 1.4rem;
+}
 .cart-section .cta-btn-container button:disabled {
   background: #7c7c7c;
 }

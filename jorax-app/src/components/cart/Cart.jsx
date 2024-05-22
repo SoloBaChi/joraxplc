@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import DeleteIcon from "../shared/icons/DeleteIcon";
 import AddCartIcon from "../shared/icons/AddCartIcon";
 import SubtractCartIcon from "../shared/icons/SubtractCartIcon";
@@ -91,7 +91,7 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
               Sub Total : <span> ₦ {totalPrice}</span>
             </p>
           </div>
-          <div className="cta-btn-container">
+          <div className="cta-btn-container group-btns">
             <button
               onClick={() => {
                 navigate("/checkout");
@@ -100,6 +100,20 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
               disabled={cartItem.length === 0}
             >
               checkout
+            </button>
+            <button
+              onClick={() => {
+                navigate("/products");
+              }}
+              className="cta-btn-primary"
+              style={{
+                display: cartItem.length === 0 ? "none" : "block",
+                background: "#fff",
+                border: "1px solid #00ac57",
+                color: "#000",
+              }}
+            >
+              continue shopping
             </button>
           </div>
         </div>
