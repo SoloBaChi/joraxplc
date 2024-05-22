@@ -47,44 +47,22 @@ const Footer = (props) => {
                   <li>
                     <Link to="/">home</Link>
                   </li>
-                  <li>
-                    <Link to="/">about us</Link>
-                  </li>
-                  <li>
-                    <Link to="/">contact us</Link>
-                  </li>
-                  <li>
-                    <Link to="/">support</Link>
-                  </li>
-                  <li>
-                    <Link to="/">privacy</Link>
-                  </li>
-                  <li>
-                    <Link to="/">cookies</Link>
-                  </li>
+                  <li>{/* <Link to="/aboutus">about us</Link> */}</li>
+                  <li>{/* <Link to="#">contact us</Link> */}</li>
+                  <li>{/* <Link to="/">support</Link> */}</li>
+                  <li>{/* <Link to="/">privacy</Link> */}</li>
+                  <li>{/* <Link to="/">cookies</Link> */}</li>
                 </ul>
               </li>
               <li>
                 <Link to="/">resources</Link>
                 <ul className="drop-list-items">
-                  <li>
-                    <Link to="/">blog</Link>
-                  </li>
-                  <li>
-                    <Link to="/">pricing</Link>
-                  </li>
-                  <li>
-                    <Link to="/">CSR</Link>
-                  </li>
-                  <li>
-                    <Link to="/">help center</Link>
-                  </li>
-                  <li>
-                    <Link to="/">documentation</Link>
-                  </li>
-                  <li>
-                    <Link to="/">team of service</Link>
-                  </li>
+                  <li>{/* <Link to="/">blog</Link> */}</li>
+                  <li>{/* <Link to="/">pricing</Link> */}</li>
+                  <li>{/* <Link to="/">CSR</Link> */}</li>
+                  <li>{/* <Link to="/">help center</Link> */}</li>
+                  <li>{/* <Link to="/">documentation</Link> */}</li>
+                  <li>{/* <Link to="/">term of service</Link> */}</li>
                 </ul>
               </li>
             </ul>
