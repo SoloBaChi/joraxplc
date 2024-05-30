@@ -60,6 +60,20 @@ button {
   border: none;
   outline: none;
 }
+.back-arrow-section {
+  text-align: right;
+  margin-bottom: 0;
+}
+.back-arrow-container {
+  border: 1px solid var(--green-color);
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  line-height: 48px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
 .blank-cta-btn,
 .cta-btn-primary,
 .cta-btn-secondary,
@@ -75,7 +89,6 @@ button {
   text-transform: capitalize;
   cursor: pointer;
   text-align: center;
-  /* margin-top: 2rem; */
 }
 .blank-cta-btn {
   background: #ffffff;

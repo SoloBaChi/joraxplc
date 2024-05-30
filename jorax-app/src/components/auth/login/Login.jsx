@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import EyeIcon from "../../shared/icons/EyeIcon";
+import BackArrow from "../../shared/BackArrow";
 
 function Login(props) {
   return (
@@ -51,6 +52,9 @@ function Login(props) {
           </div>
         </form>
       </div>
+      <Link to="/">
+        <BackArrow />
+      </Link>
     </section>
   );
 }

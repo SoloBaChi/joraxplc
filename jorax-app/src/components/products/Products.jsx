@@ -4,6 +4,8 @@ import Footer from "../footer/Footer";
 // import UnratedIcon from '../shared/icons/UnratedIcon';
 // import { useNavigate } from 'react-router-dom';
 import ProductCard from "./ProductCard";
+import { Link } from "react-router-dom";
+import BackArrow from "../shared/BackArrow";
 function Products({ addToCart, ProductItems }) {
   return (
     <>
@@ -66,6 +68,10 @@ function Products({ addToCart, ProductItems }) {
           </div>
         </div>
       </section>
+
+      <Link to="/aboutus">
+        <BackArrow />
+      </Link>
 
       <Footer />
     </>

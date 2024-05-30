@@ -6,6 +6,7 @@ import Footer from "../footer/Footer";
 import Speciliazations from "./AboutusData";
 import Card from "../shared/Card";
 import Team from "./Team";
+import BackArrow from "../shared/BackArrow";
 
 function Aboutus(props) {
   const [readmore, setReadMore] = useState(false);
@@ -121,7 +122,7 @@ function Aboutus(props) {
       </section>
 
       <section className="our-specialization">
-        <h3>we specialize in</h3>
+        <h3>core values</h3>
         <div className="grid-container-3">
           {Speciliazations.map((item, index) => (
             <div key={item.id}>
@@ -133,6 +134,10 @@ function Aboutus(props) {
 
       <Team />
 
+      {/* Back arrow */}
+      <Link to="/">
+        <BackArrow />
+      </Link>
       <Footer />
     </>
   );

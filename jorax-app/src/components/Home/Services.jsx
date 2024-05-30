@@ -32,8 +32,8 @@ function Services(props) {
             and medical devices in Nigeria.
           </p>
           <div className="cta-btn-container">
-            <Link className="blank-cta-btn" to="/products">
-              order products
+            <Link className="blank-cta-btn" to="#">
+              coming soon
             </Link>
           </div>
         </div>
@@ -59,8 +59,8 @@ function Services(props) {
             hospitals and professionals.
           </p>
           <div className="cta-btn-container">
-            <Link className="blank-cta-btn" to="/products">
-              order products
+            <Link className="blank-cta-btn" to="#">
+              coming soon
             </Link>
           </div>
         </div>
