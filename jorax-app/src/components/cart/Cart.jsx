@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import DeleteIcon from "../shared/icons/DeleteIcon";
 import AddCartIcon from "../shared/icons/AddCartIcon";
 import SubtractCartIcon from "../shared/icons/SubtractCartIcon";
+import BackArrow from "../shared/BackArrow";
 
 function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
   const navigate = useNavigate();
@@ -118,6 +119,9 @@ function Cart({ cartItem, addToCart, removeFromCart, decreaseQuantity }) {
           </div>
         </div>
       </div>
+      <Link to="/products">
+        <BackArrow />
+      </Link>
     </section>
   );
 }
